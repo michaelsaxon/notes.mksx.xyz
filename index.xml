@@ -54,17 +54,17 @@
     <description>冷笑话 stupid joke 好笑话 一点儿不好笑 一定要 →必ず 扯淡→bullshit.</description>
     <pubDate>Tue, 22 Apr 2025 00:21:50 GMT</pubDate>
   </item><item>
-    <title>Interviews Fatima Fellowship</title>
-    <link>https://notes.saxon.me/01-Fleeting-Notes/Interviews-Fatima-Fellowship</link>
-    <guid>https://notes.saxon.me/01-Fleeting-Notes/Interviews-Fatima-Fellowship</guid>
-    <description>Fatima: Based in Bangladesh, working for US company, hopes to apply F24 to US PhD programs 20 hr/wk Already does eval for deep learning Already works out of notebooks, knows python and torch etc Most interested in expanding beyond nouns Namrata: Worked with He He no result @ NYU on fairness Tried ou...</description>
-    <pubDate>Tue, 22 Apr 2025 00:05:13 GMT</pubDate>
-  </item><item>
     <title>GRFP Report 2025</title>
     <link>https://notes.saxon.me/01-Fleeting-Notes/GRFP-Report-2025</link>
     <guid>https://notes.saxon.me/01-Fleeting-Notes/GRFP-Report-2025</guid>
     <description>I study generative AI artifacts like LLMs and text-to-image models.</description>
     <pubDate>Mon, 21 Apr 2025 22:09:09 GMT</pubDate>
+  </item><item>
+    <title>Sysadmin tutorial</title>
+    <link>https://notes.saxon.me/01-Fleeting-Notes/Sysadmin-tutorial</link>
+    <guid>https://notes.saxon.me/01-Fleeting-Notes/Sysadmin-tutorial</guid>
+    <description>Total size of all subdirs of something sudo du -s * | awk &#039;{total += $1} END {print total}&#039; | numfmt --to=iec du df rsync lsblk move your shit before update newuser basic sensible bashrc website github.com/ucsbnlp/website Apache2 on the nlp server sudo service apache2 stop/start/restart co...</description>
+    <pubDate>Fri, 04 Apr 2025 03:22:03 GMT</pubDate>
   </item>
     </channel>
   </rss>
