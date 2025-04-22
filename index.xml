@@ -6,6 +6,12 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>index</title>
+    <link>https://notes.mksx.xyz/</link>
+    <guid>https://notes.mksx.xyz/</guid>
+    <description>Michael’s (Public) Obsidian Library I am hosting this mainly for myself and also so that I can point links in it to people who ask me.</description>
+    <pubDate>Tue, 22 Apr 2025 20:53:50 GMT</pubDate>
+  </item><item>
     <title>Quartz setup info</title>
     <link>https://notes.mksx.xyz/How-To/Quartz-setup-info</link>
     <guid>https://notes.mksx.xyz/How-To/Quartz-setup-info</guid>
@@ -29,12 +35,6 @@
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Changes,-Additions-for-FAccT-Talk</guid>
     <description>MUST COMPLETE TODAY, UPDATE SLIDES ON GOOGLE DOC BY TONIGHT Observations of failure mode differences Differential levels of sexualization bias for DALLE Mega vs DALLE 2 vs StableDiffusion 2 vs Altdiffusion woman examples Geographical bias for dog (Shiba rate in JA &gt; ZH &gt; others), mitigated by ...</description>
     <pubDate>Tue, 22 Apr 2025 00:34:53 GMT</pubDate>
-  </item><item>
-    <title>index</title>
-    <link>https://notes.mksx.xyz/</link>
-    <guid>https://notes.mksx.xyz/</guid>
-    <description>Michael Saxon’s Obsidian Library I am hosting this mainly for myself and also so that I can point links in it to people who ask me.</description>
-    <pubDate>Tue, 22 Apr 2025 00:31:39 GMT</pubDate>
   </item><item>
     <title>読物</title>
     <link>https://notes.mksx.xyz/09-Language/%E6%97%A5%E6%9C%AC%E8%AA%9E/%E8%AA%AD%E7%89%A9</link>
