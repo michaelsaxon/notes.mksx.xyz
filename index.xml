@@ -6,6 +6,12 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Homebrew sync to a custom URL using quartz</title>
+    <link>https://notes.mksx.xyz/How-To/Homebrew-sync-to-a-custom-URL-using-quartz</link>
+    <guid>https://notes.mksx.xyz/How-To/Homebrew-sync-to-a-custom-URL-using-quartz</guid>
+    <description>This is a simple guide for how I rolled my own rip-off of Obsidian Publish.</description>
+    <pubDate>Thu, 24 Apr 2025 23:06:33 GMT</pubDate>
+  </item><item>
     <title>Papers for subjective reward modeling in GenAI</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/Papers-for-subjective-reward-modeling-in-GenAI</link>
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Papers-for-subjective-reward-modeling-in-GenAI</guid>
@@ -47,12 +53,6 @@
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/linkdump</guid>
     <description>List of random links to replicate map architecture from various private settings: Y1-3 PECO Master list of todos for PECO EACL camready related work How PECO differs from Competency Problems Master list of todos for PECO EACL camready Notes from SoCalNLP D3JS Notes 2023.aclweb.org/calls/system_demon...</description>
     <pubDate>Wed, 23 Apr 2025 00:58:47 GMT</pubDate>
-  </item><item>
-    <title>Homebrew sync to a custom URL using quartz</title>
-    <link>https://notes.mksx.xyz/How-To/Homebrew-sync-to-a-custom-URL-using-quartz</link>
-    <guid>https://notes.mksx.xyz/How-To/Homebrew-sync-to-a-custom-URL-using-quartz</guid>
-    <description>This is a simple guide for how I rolled my own rip-off of Obsidian Publish.</description>
-    <pubDate>Wed, 23 Apr 2025 00:44:51 GMT</pubDate>
   </item><item>
     <title>Quartz setup info</title>
     <link>https://notes.mksx.xyz/How-To/Quartz-setup-info</link>
