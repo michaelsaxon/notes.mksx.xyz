@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Papers for subjective reward modeling in GenAI</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Michael's Notes"/><meta property="og:title" content="Papers for subjective reward modeling in GenAI"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Papers for subjective reward modeling in GenAI"/><meta name="twitter:description" content="ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation Jiazheng Xu, Xiao Liu, Yuchen Wu, Yuxuan Tong, Qinkai Li, Ming Ding, Jie Tang, Yuxiao Dong Neural Information Processing Systems 2023 open paper page Abstract We present a comprehensive solution to learn and improve..."/><meta property="og:description" content="ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation Jiazheng Xu, Xiao Liu, Yuchen Wu, Yuxuan Tong, Qinkai Li, Ming Ding, Jie Tang, Yuxiao Dong Neural Information Processing Systems 2023 open paper page Abstract We present a comprehensive solution to learn and improve..."/><meta property="og:image:alt" content="ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation Jiazheng Xu, Xiao Liu, Yuchen Wu, Yuxuan Tong, Qinkai Li, Ming Ding, Jie Tang, Yuxiao Dong Neural Information Processing Systems 2023 open paper page Abstract We present a comprehensive solution to learn and improve..."/><meta property="twitter:domain" content="notes.mksx.xyz"/><meta property="og:url" content="https://notes.mksx.xyz/01-Fleeting-Notes/Papers-for-subjective-reward-modeling-in-GenAI"/><meta property="twitter:url" content="https://notes.mksx.xyz/01-Fleeting-Notes/Papers-for-subjective-reward-modeling-in-GenAI"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation Jiazheng Xu, Xiao Liu, Yuchen Wu, Yuxuan Tong, Qinkai Li, Ming Ding, Jie Tang, Yuxiao Dong Neural Information Processing Systems 2023 open paper page Abstract We present a comprehensive solution to learn and improve..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL21zc2F4b24vRG9jdW1lbnRzL2dpdGh1Yi9xdWFydHovcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://notes.mksx.xyz/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://notes.mksx.xyz/01-Fleeting-Notes/Papers-for-subjective-reward-modeling-in-GenAI-og-image.webp"/><meta property="og:image:url" content="https://notes.mksx.xyz/01-Fleeting-Notes/Papers-for-subjective-reward-modeling-in-GenAI-og-image.webp"/><meta name="twitter:image" content="https://notes.mksx.xyz/01-Fleeting-Notes/Papers-for-subjective-reward-modeling-in-GenAI-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="01-Fleeting-Notes/Papers-for-subjective-reward-modeling-in-GenAI"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Michael's Notes</a></h2><div class="spacer mobile-only"></div><div style="display: flex; flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><p>Search</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" class="readerIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="12" height="16" rx="1"></rect><line x1="9" y1="8" x2="15" y2="8"></line><line x1="9" y1="12" x2="15" y2="12"></line><line x1="9" y1="16" x2="13" y2="16"></line></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-content"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="explorer-content" aria-expanded="false"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../01-Fleeting-Notes/">01 Fleeting Notes</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Papers for subjective reward modeling in GenAI</a></div></nav><h1 class="article-title">Papers for subjective reward modeling in GenAI</h1><p show-comma="true" class="content-meta"><time datetime="2025-04-24T21:57:14.177Z">Apr 24, 2025</time><span>68 min read</span></p></div></div><article class="popover-hint"><ul>
+<li>
+<p><strong>ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation</strong>
+Jiazheng Xu, Xiao Liu, Yuchen Wu, Yuxuan Tong, Qinkai Li, Ming Ding, Jie Tang, Yuxiao Dong
+Neural Information Processing Systems 2023
+<a href="https://arxiv.org/pdf/2304.05977.pdf" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   We present a comprehensive solution to learn and improve text-to-image models from human preference feedback. To begin with, we build ImageReward -- the first general-purpose text-to-image human preference reward model -- to effectively encode human preferences. Its training is based on our systematic annotation pipeline including rating and ranking, which collects 137k expert comparisons to date. In human evaluation, ImageReward outperforms existing scoring models and metrics, making it a promising automatic metric for evaluating text-to-image synthesis. On top of it, we propose Reward Feedback Learning (ReFL), a direct tuning algorithm to optimize diffusion models against a scorer. Both automatic and human evaluation support ReFL's advantages over compared methods. All code and datasets are provided at \url{https://github.com/THUDM/ImageReward}.
+</details>
+</li>
+<li>
+<p><strong>Robust Preference Learning for Storytelling via Contrastive Reinforcement Learning</strong>
+Louis Castricato, Alexander Havrilla, Shahbuland Matiana, M. Pieler, Anbang Ye, Ian Yang, Spencer Frazier, Mark O. Riedl
+arXiv.org 2022
+<a href="https://api.semanticscholar.org/CorpusId:252907619" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Controlled automated story generation seeks to generate natural language stories satisfying constraints from natural language critiques or preferences. Existing methods to control for story preference utilize prompt engineering which is labor intensive and often inconsistent. They may also use logit-manipulation methods which require annotated datasets to exist for the desired attributes. To address these issues, we first train a contrastive bi-encoder model to align stories with corresponding human critiques, named CARP, building a general purpose preference model. This is subsequently used as a reward function to fine-tune a generative language model via reinforcement learning. However, simply fine-tuning a generative language model with a contrastive reward model does not always reliably result in a story generation system capable of generating stories that meet user preferences. To increase story generation robustness we further fine-tune the contrastive reward model using a prompt-learning technique. A human participant study is then conducted comparing generations from our full system, ablations, and two baselines. We show that the full fine-tuning pipeline results in a story generator preferred over a LLM 20x as large as well as logit-based methods. This motivates the use of contrastive learning for general purpose human preference modeling.
+</details>
+</li>
+<li>
+<p><strong>Creativity and Machine Learning: A Survey</strong>
+Giorgio Franceschelli, Mirco Musolesi
+ACM Computing Surveys 2021
+<a href="https://api.semanticscholar.org/CorpusId:233168627" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   There is a growing interest in the area of machine learning and creativity. This survey presents an overview of the history and the state of the art of computational creativity theories, key machine learning techniques (including generative deep learning), and corresponding automatic evaluation methods. After presenting a critical discussion of the key contributions in this area, we outline the current research challenges and emerging opportunities in this field.
+</details>
+</li>
+<li>
+<p><strong>RAFT: Reward rAnked FineTuning for Generative Foundation Model Alignment</strong>
+Hanze Dong, Wei Xiong, Deepanshu Goyal, Shizhe Diao, Jipeng Zhang, Kashun Shum, T. Zhang
+Trans. Mach. Learn. Res. 2023
+<a href="https://arxiv.org/pdf/2304.06767.pdf" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Generative foundation models are susceptible to implicit biases that can arise from extensive unsupervised training data. Such biases can produce suboptimal samples, skewed outcomes, and unfairness, with potentially serious consequences. Consequently, aligning these models with human ethics and preferences is an essential step toward ensuring their responsible and effective deployment in real-world applications. Prior research has primarily employed Reinforcement Learning from Human Feedback (RLHF) to address this problem, where generative models are fine-tuned with RL algorithms guided by a human-feedback-informed reward model. However, the inefficiencies and instabilities associated with RL algorithms frequently present substantial obstacles to the successful alignment, necessitating the development of a more robust and streamlined approach. To this end, we introduce a new framework, Reward rAnked FineTuning (RAFT), designed to align generative models effectively. Utilizing a reward model and a sufficient number of samples, our approach selects the high-quality samples, discarding those that exhibit undesired behavior, and subsequently enhancing the model by fine-tuning on these filtered samples. Our studies show that RAFT can effectively improve the model performance in both reward learning and other automated metrics in both large language models and diffusion models.
+</details>
+</li>
+<li>
+<p><strong>MusicRL: Aligning Music Generation to Human Preferences</strong>
+Geoffrey Cideron, Sertan Girgin, Mauro Verzetti, Damien Vincent, Matej Kastelic, Zalán Borsos, Brian McWilliams, Victor Ungureanu, Olivier Bachem, O. Pietquin, Matthieu Geist, L’eonard Hussenot, Neil Zeghidour, A. Agostinelli
+International Conference on Machine Learning 2024
+<a href="https://arxiv.org/pdf/2402.04229.pdf" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   We propose MusicRL, the first music generation system finetuned from human feedback. Appreciation of text-to-music models is particularly subjective since the concept of musicality as well as the specific intention behind a caption are user-dependent (e.g. a caption such as&quot;upbeat work-out music&quot;can map to a retro guitar solo or a techno pop beat). Not only this makes supervised training of such models challenging, but it also calls for integrating continuous human feedback in their post-deployment finetuning. MusicRL is a pretrained autoregressive MusicLM (Agostinelli et al., 2023) model of discrete audio tokens finetuned with reinforcement learning to maximise sequence-level rewards. We design reward functions related specifically to text-adherence and audio quality with the help from selected raters, and use those to finetune MusicLM into MusicRL-R. We deploy MusicLM to users and collect a substantial dataset comprising 300,000 pairwise preferences. Using Reinforcement Learning from Human Feedback (RLHF), we train MusicRL-U, the first text-to-music model that incorporates human feedback at scale. Human evaluations show that both MusicRL-R and MusicRL-U are preferred to the baseline. Ultimately, MusicRL-RU combines the two approaches and results in the best model according to human raters. Ablation studies shed light on the musical attributes influencing human preferences, indicating that text adherence and quality only account for a part of it. This underscores the prevalence of subjectivity in musical appreciation and calls for further involvement of human listeners in the finetuning of music generation models.
+</details>
+</li>
+<li>
+<p><strong>Beyond Thumbs Up/Down: Untangling Challenges of Fine-Grained Feedback for Text-to-Image Generation</strong>
+Katherine M. Collins, Najoung Kim, Yonatan Bitton, Verena Rieser, Shayegan Omidshafiei, Yushi Hu, Sherol Chen, Senjuti Dutta, Minsuk Chang, Kimin Lee, Youwei Liang, Georgina Evans, Sahil Singla, Gang Li, Adrian Weller, Junfeng He, Deepak Ramachandran, K. Dvijotham
+AAAI/ACM Conference on AI, Ethics, and Society 2024
+<a href="https://api.semanticscholar.org/CorpusId:270702406" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Human feedback plays a critical role in learning and refining reward models for text-to-image generation, but the optimal form the feedback should take for learning an accurate reward function has not been conclusively established. This paper investigates the effectiveness of fine-grained feedback which captures nuanced distinctions in image quality and prompt-alignment, compared to traditional coarse-grained feedback (for example, thumbs up/down or ranking between a set of options). While fine-grained feedback holds promise, particularly for systems catering to diverse societal preferences, we show that demonstrating its superiority to coarse-grained feedback is not automatic. Through experiments on real and synthetic preference data, we surface the complexities of building effective models due to the interplay of model choice, feedback type, and the alignment between human judgment and computational interpretation. We identify key challenges in eliciting and utilizing fine-grained feedback, prompting a reassessment of its assumed benefits and practicality. Our findings -- e.g., that fine-grained feedback can lead to worse models for a fixed budget, in some settings; however, in controlled settings with known attributes, fine grained rewards can indeed be more helpful -- call for careful consideration of feedback attributes and potentially beckon novel modeling approaches to appropriately unlock the potential value of fine-grained feedback in-the-wild.
+</details>
+</li>
+<li>
+<p><strong>Controllable Neural Story Plot Generation via Reward Shaping</strong>
+Animesh Mehta, Mark O. Riedl, Brent Harrison, Lara J. Martin, Murtaza Dhuliawala, Pradyumna Tambwekar
+International Joint Conference on Artificial Intelligence 2018
+<a href="https://api.semanticscholar.org/CorpusId:199465680" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Language-modeling--based approaches to story plot generation attempt to construct a plot by sampling from a language model (LM) to predict the next character, word, or sentence to add to the story. LM techniques lack the ability to receive guidance from the user to achieve a specific goal, resulting in stories that don't have a clear sense of progression and lack coherence. We present a reward-shaping technique that analyzes a story corpus and produces intermediate rewards that are backpropagated into a pre-trained LM in order to guide the model toward a given goal. Automated evaluations show our technique can create a model that generates story plots which consistently achieve a specified goal. Human-subject studies show that the generated stories have more plausible event ordering than baseline plot generation techniques.
+</details>
+</li>
+<li>
+<p><strong>Failures Are Fated, But Can Be Faded: Characterizing and Mitigating Unwanted Behaviors in Large-Scale Vision and Language Models</strong>
+Som Sagar, Aditya Taparia, Ransalu Senanayake
+International Conference on Machine Learning 2024
+<a href="https://api.semanticscholar.org/CorpusId:270380164" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   In large deep neural networks that seem to perform surprisingly well on many tasks, we also observe a few failures related to accuracy, social biases, and alignment with human values, among others. Therefore, before deploying these models, it is crucial to characterize this failure landscape for engineers to debug and legislative bodies to audit models. Nevertheless, it is infeasible to exhaustively test for all possible combinations of factors that could lead to a model's failure. In this paper, we introduce a post-hoc method that utilizes \emph{deep reinforcement learning} to explore and construct the landscape of failure modes in pre-trained discriminative and generative models. With the aid of limited human feedback, we then demonstrate how to restructure the failure landscape to be more desirable by moving away from the discovered failure modes. We empirically show the effectiveness of the proposed method across common Computer Vision, Natural Language Processing, and Vision-Language tasks.
+</details>
+</li>
+<li>
+<p><strong>Generative Reward Models</strong>
+Alon Albalak, Dakota Mahan, Jan-Philipp Franken, Chelsea Finn, Duy Phung, Chase Blagden, Nathan Lile, Louis Castricato, Rafael Rafailov
+arXiv.org 2024
+<a href="https://api.semanticscholar.org/CorpusId:273404003" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Reinforcement Learning from Human Feedback (RLHF) has greatly improved the performance of modern Large Language Models (LLMs). The RLHF process is resource-intensive and technically challenging, generally requiring a large collection of human preference labels over model-generated outputs. Reinforcement Learning from AI Feedback (RLAIF) addresses this data collection challenge by leveraging synthetic preferences generated by an LLM. However, recent work has shown that synthetic preferences labels may not align well with human preference judgments. To address this, we propose a hybrid approach that unifies RLHF and RLAIF methodologies. We introduce GenRM, an iterative algorithm that trains an LLM on self-generated reasoning traces, leading to synthetic preference labels matching human preference judgments. Empirically, we show that zero-shot LLM-based judgments under-perform compared to Bradley-Terry reward models on in-distribution tasks (between 9-36%). In contrast, GenRM achieves in-distribution accuracy comparable to Bradley-Terry models, while significantly outperforming them on out-of-distribution tasks (between 10-45%). Moreover, GenRM surpasses the performance of using LLMs as judges on both in-distribution (by 9-31%) and out-of-distribution tasks (by 2- 6%). Our results show that combining the strengths of RLHF and RLAIF offers a promising approach for improving the quality of synthetic preference labels.
+</details>
+</li>
+<li>
+<p><strong>Reinforcement Learning With LLMs Interaction For Distributed Diffusion Model Services</strong>
+Hongyang Du, Ruichen Zhang, D. Niyato, Jiawen Kang, Zehui Xiong, Shuguang Cui, Xuemin Shen, Dong In Kim
+unknown 2023
+<a href="https://api.semanticscholar.org/CorpusId:265294961" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Distributed Artificial Intelligence-Generated Content (AIGC) has attracted significant attention, but two key challenges remain: maximizing subjective Quality of Experience (QoE) and improving energy efficiency, which are particularly pronounced in widely adopted Generative Diffusion Model (GDM)-based image generation services. In this paper, we propose a novel user-centric Interactive AI (IAI) approach for service management, with a distributed GDM-based AIGC framework that emphasizes efficient and cooperative deployment. The proposed method restructures the GDM inference process by allowing users with semantically similar prompts to share parts of the denoising chain. Furthermore, to maximize the users' subjective QoE, we propose an IAI approach, i.e., Reinforcement Learning With Large Language Models Interaction (RLLI), which utilizes Large Language Model (LLM)-empowered generative agents to replicate user interaction, providing real-time and subjective QoE feedback aligned with diverse user personalities. Lastly, we present the GDM-based Deep Deterministic Policy Gradient (GDDPG) algorithm, adapted to the proposed RLLI framework, to allocate communication and computing resources effectively while accounting for subjective user traits and dynamic wireless conditions. Simulation results demonstrate that G-DDPG improves total QoE by 15% compared with the standard DDPG algorithm.
+</details>
+</li>
+<li>
+<p><strong>No Metrics Are Perfect: Adversarial Reward Learning for Visual Storytelling</strong>
+Xin Eric Wang, Wenhu Chen, Yuan-fang Wang, William Yang Wang
+Annual Meeting of the Association for Computational Linguistics 2018
+<a href="https://www.aclweb.org/anthology/P18-1083.pdf" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Though impressive results have been achieved in visual captioning, the task of generating abstract stories from photo streams is still a little-tapped problem. Different from captions, stories have more expressive language styles and contain many imaginary concepts that do not appear in the images. Thus it poses challenges to behavioral cloning algorithms. Furthermore, due to the limitations of automatic metrics on evaluating story quality, reinforcement learning methods with hand-crafted rewards also face difficulties in gaining an overall performance boost. Therefore, we propose an Adversarial REward Learning (AREL) framework to learn an implicit reward function from human demonstrations, and then optimize policy search with the learned reward function. Though automatic evaluation indicates slight performance boost over state-of-the-art (SOTA) methods in cloning expert behaviors, human evaluation shows that our approach achieves significant improvement in generating more human-like stories than SOTA systems.
+</details>
+</li>
+<li>
+<p><strong>Is Crowdsourcing Breaking Your Bank? Cost-Effective Fine-Tuning of Pre-trained Language Models with Proximal Policy Optimization</strong>
+Shuo Yang, Gjergji Kasneci
+International Conference on Language Resources and Evaluation 2024
+<a href="https://api.semanticscholar.org/CorpusId:268041354" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Wide usage of ChatGPT has highlighted the potential of reinforcement learning from human feedback. However, its training pipeline relies on manual ranking, a resource-intensive process. To reduce labor costs, we propose a self-supervised text ranking approach for applying Proximal-Policy-Optimization to fine-tune language models while eliminating the need for human annotators. Our method begins with probabilistic sampling to encourage a language model to generate diverse responses for each input. We then employ TextRank and ISODATA algorithms to rank and cluster these responses based on their semantics. Subsequently, we construct a reward model to learn the rank and optimize our generative policy. Our experimental results, conducted using two language models on three tasks, demonstrate that the models trained by our method considerably outperform baselines regarding BLEU, GLEU, and METEOR scores. Furthermore, our manual evaluation shows that our ranking results exhibit a remarkably high consistency with that of humans. This research significantly reduces training costs of proximal policy-guided models and demonstrates the potential for self-correction of language models.
+</details>
+</li>
+<li>
+<p><strong>Plot and Rework: Modeling Storylines for Visual Storytelling</strong>
+Chi-Yang Hsu, Yun-Wei Chu, Ting-Hao ‘Kenneth’ Huang, Lun-Wei Ku
+Findings 2021
+<a href="https://api.semanticscholar.org/CorpusId:234682123" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Writing a coherent and engaging story is not easy. Creative writers use their knowledge and worldview to put disjointed elements together to form a coherent storyline, and work and rework iteratively toward perfection. Automated visual storytelling (VIST) models, however, make poor use of external knowledge and iterative generation when attempting to create stories. This paper introduces PR-VIST, a framework that represents the input image sequence as a story graph in which it finds the best path to form a storyline. PR-VIST then takes this path and learns to generate the final story via an iterative training process. This framework produces stories that are superior in terms of diversity, coherence, and humanness, per both automatic and human evaluations. An ablation study shows that both plotting and reworking contribute to the model's superiority.
+</details>
+</li>
+<li>
+<p><strong>The Impact of Preference Agreement in Reinforcement Learning from Human Feedback: A Case Study in Summarization</strong>
+Sian Gooding, Hassan Mansoor
+arXiv.org 2023
+<a href="https://api.semanticscholar.org/CorpusId:265066895" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Reinforcement Learning from Human Feedback (RLHF) can be used to capture complex and nuanced properties of text generation quality. As a result, the task of text summarization has been identified as a good candidate for this process. In this paper, we explore how preference agreement impacts the efficacy of RLHF for summarization. We show that sampling human preferences to include a range of annotator agreement results in (1) higher accuracy reward models and (2) alters the characteristics of quality captured. We additionally show improvements in downstream generation when using a reward model trained with a range of preference agreements. Our contributions have implications for the design of synthetic datasets as well as the importance of considering quality differentials in comparison-based data.
+</details>
+</li>
+<li>
+<p><strong>Confidence-aware Reward Optimization for Fine-tuning Text-to-Image Models</strong>
+Kyuyoung Kim, Jongheon Jeong, Minyong An, Mohammad Ghavamzadeh, K. Dvijotham, Jinwoo Shin, Kimin Lee
+International Conference on Learning Representations 2024
+<a href="https://api.semanticscholar.org/CorpusId:268856541" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Fine-tuning text-to-image models with reward functions trained on human feedback data has proven effective for aligning model behavior with human intent. However, excessive optimization with such reward models, which serve as mere proxy objectives, can compromise the performance of fine-tuned models, a phenomenon known as reward overoptimization. To investigate this issue in depth, we introduce the Text-Image Alignment Assessment (TIA2) benchmark, which comprises a diverse collection of text prompts, images, and human annotations. Our evaluation of several state-of-the-art reward models on this benchmark reveals their frequent misalignment with human assessment. We empirically demonstrate that overoptimization occurs notably when a poorly aligned reward model is used as the fine-tuning objective. To address this, we propose TextNorm, a simple method that enhances alignment based on a measure of reward model confidence estimated across a set of semantically contrastive text prompts. We demonstrate that incorporating the confidence-calibrated rewards in fine-tuning effectively reduces overoptimization, resulting in twice as many wins in human evaluation for text-image alignment compared against the baseline reward models.
+</details>
+</li>
+<li>
+<p><strong>A Survey on Human Preference Learning for Large Language Models</strong>
+Ruili Jiang, Kehai Chen, Xuefeng Bai, Zhixuan He, Juntao Li, Muyun Yang, Tiejun Zhao, Liqiang Nie, Min Zhang
+arXiv.org 2024
+<a href="https://api.semanticscholar.org/CorpusId:270560824" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   The recent surge of versatile large language models (LLMs) largely depends on aligning increasingly capable foundation models with human intentions by preference learning, enhancing LLMs with excellent applicability and effectiveness in a wide range of contexts. Despite the numerous related studies conducted, a perspective on how human preferences are introduced into LLMs remains limited, which may prevent a deeper comprehension of the relationships between human preferences and LLMs as well as the realization of their limitations. In this survey, we review the progress in exploring human preference learning for LLMs from a preference-centered perspective, covering the sources and formats of preference feedback, the modeling and usage of preference signals, as well as the evaluation of the aligned LLMs. We first categorize the human feedback according to data sources and formats. We then summarize techniques for human preferences modeling and compare the advantages and disadvantages of different schools of models. Moreover, we present various preference usage methods sorted by the objectives to utilize human preference signals. Finally, we summarize some prevailing approaches to evaluate LLMs in terms of alignment with human intentions and discuss our outlooks on the human intention alignment for LLMs.
+</details>
+</li>
+<li>
+<p><strong>MAP: Multi-Human-Value Alignment Palette</strong>
+Xinran Wang, Qi Le, Ammar Ahmed, Enmao Diao, Yi Zhou, Nathalie Baracaldo, Jie Ding, Ali Anwar
+arXiv.org 2024
+<a href="https://api.semanticscholar.org/CorpusId:273638073" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Ensuring that generative AI systems align with human values is essential but challenging, especially when considering multiple human values and their potential trade-offs. Since human values can be personalized and dynamically change over time, the desirable levels of value alignment vary across different ethnic groups, industry sectors, and user cohorts. Within existing frameworks, it is hard to define human values and align AI systems accordingly across different directions simultaneously, such as harmlessness, helpfulness, and positiveness. To address this, we develop a novel, first-principle approach called Multi-Human-Value Alignment Palette (MAP), which navigates the alignment across multiple human values in a structured and reliable way. MAP formulates the alignment problem as an optimization task with user-defined constraints, which define human value targets. It can be efficiently solved via a primal-dual approach, which determines whether a user-defined alignment target is achievable and how to achieve it. We conduct a detailed theoretical analysis of MAP by quantifying the trade-offs between values, the sensitivity to constraints, the fundamental connection between multi-value alignment and sequential alignment, and proving that linear weighted rewards are sufficient for multi-value alignment. Extensive experiments demonstrate MAP's ability to align multiple values in a principled manner while delivering strong empirical performance across various tasks.
+</details>
+</li>
+<li>
+<p><strong>Fine-tuning of diffusion models via stochastic control: entropy regularization and beyond</strong>
+Wenpin Tang
+arXiv.org 2024
+<a href="https://api.semanticscholar.org/CorpusId:268358469" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   This paper aims to develop and provide a rigorous treatment to the problem of entropy regularized fine-tuning in the context of continuous-time diffusion models, which was recently proposed by Uehara et al. (arXiv:2402.15194, 2024). The idea is to use stochastic control for sample generation, where the entropy regularizer is introduced to mitigate reward collapse. We also show how the analysis can be extended to fine-tuning involving a general $f$-divergence regularizer.
+</details>
+</li>
+<li>
+<p><strong>COS(M+O)S: Curiosity and RL-Enhanced MCTS for Exploring Story Space via Language Models</strong>
+Tobias Materzok
+arXiv.org 2025
+<a href="https://api.semanticscholar.org/CorpusId:275932078" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   We present COS(M+O)S, a System 2-inspired framework for open-ended plot development that systematically explores the vast space of possible story expansions, enabling a 3B-parameter language model to approach the plot quality of a 70B model on select short-story tasks. The method accomplishes this by combining Monte Carlo Tree Search (MCTS), guided by a step-level value model that rewards moderate surprisal (curiosity) while penalizing incoherence, and Odds Ratio Preference Optimization (ORPO) to fine-tune the policy on high-value plot expansions. This iterative reinforcement learning loop systematically explores multiple candidate plot branches, backpropagates quality signals, and adapts the policy for faster convergence, notably shifting the policy from puzzle-based Chain-of-Thought to more character-driven storytelling. In small-scale tests with short-story prompts, 67%-77% of participants favored COS(M+O)S's highest-rated expansions over lower-rated ones, suggesting that our learned value function aligns. GPT-4o ratings further show that COS(M+O)S surpasses naive single-pass decoding from Llama 3.2 3B by 0.59 SD, coming within 0.06 SD of Llama 3.1 70B (no significant difference, p=0.93). Pairwise comparisons with o1 place COS(M+O)S 1.5 SD above the 3B baseline and find no statistically significant gap from 70B. Nevertheless, absolute story quality remains modest, constrained by the small model's capacity and limited training data.
+</details>
+</li>
+<li>
+<p><strong>Curriculum Direct Preference Optimization for Diffusion and Consistency Models</strong>
+Niculae Sebe, Florinel-Alin Croitoru, Radu Tudor Ionescu, Vlad Hondru, Mubarak Shah
+arXiv.org 2024
+<a href="https://api.semanticscholar.org/CorpusId:269982739" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Direct Preference Optimization (DPO) has been proposed as an effective and efficient alternative to reinforcement learning from human feedback (RLHF). In this paper, we propose a novel and enhanced version of DPO based on curriculum learning for text-to-image generation. Our method is divided into two training stages. First, a ranking of the examples generated for each prompt is obtained by employing a reward model. Then, increasingly difficult pairs of examples are sampled and provided to a text-to-image generative (diffusion or consistency) model. Generated samples that are far apart in the ranking are considered to form easy pairs, while those that are close in the ranking form hard pairs. In other words, we use the rank difference between samples as a measure of difficulty. The sampled pairs are split into batches according to their difficulty levels, which are gradually used to train the generative model. Our approach, Curriculum DPO, is compared against state-of-the-art fine-tuning approaches on three benchmarks, outperforming the competing methods in terms of text alignment, aesthetics and human preference. Our code is available at https://anonymous.4open.science/r/Curriculum-DPO-EE14.
+</details>
+</li>
+<li>
+<p><strong>Thinking Outside the (Gray) Box: A Context-Based Score for Assessing Value and Originality in Neural Text Generation</strong>
+Giorgio Franceschelli, Mirco Musolesi
+arXiv.org 2025
+<a href="https://api.semanticscholar.org/CorpusId:276449710" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Despite the increasing use of large language models for creative tasks, their outputs often lack diversity. Common solutions, such as sampling at higher temperatures, can compromise the quality of the results. Drawing on information theory, we propose a context-based score to quantitatively evaluate value and originality. This score incentivizes accuracy and adherence to the request while fostering divergence from the learned distribution. We propose using our score as a reward in a reinforcement learning framework to fine-tune large language models for maximum performance. We validate our strategy through experiments in poetry generation and math problem solving, demonstrating that it enhances the value and originality of the generated solutions.
+</details>
+</li>
+<li>
+<p><strong>Shapley Values-Powered Framework for Fair Reward Split in Content Produced by GenAI</strong>
+Alex Glinsky, Alexey Sokolsky
+arXiv.org 2024
+<a href="https://api.semanticscholar.org/CorpusId:268510478" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   It is evident that, currently, generative models are surpassed in quality by human professionals. However, with the advancements in Artificial Intelligence, this gap will narrow, leading to scenarios where individuals who have dedicated years of their lives to mastering a skill become obsolete due to their high costs, which are inherently linked to the time they require to complete a task -- a task that AI could accomplish in minutes or seconds. To avoid future social upheavals, we must, even now, contemplate how to fairly assess the contributions of such individuals in training generative models and how to compensate them for the reduction or complete loss of their incomes. In this work, we propose a method to structure collaboration between model developers and data providers. To achieve this, we employ Shapley Values to quantify the contribution of artist(s) in an image generated by the Stable Diffusion-v1.5 model and to equitably allocate the reward among them.
+</details>
+</li>
+<li>
+<p><strong>What Makes A Good Story? Designing Composite Rewards for Visual Storytelling</strong>
+Junjie Hu, Yu Cheng, Zhe Gan, Jingjing Liu, Jianfeng Gao, Graham Neubig
+AAAI Conference on Artificial Intelligence 2019
+<a href="https://api.semanticscholar.org/CorpusId:202565931" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Previous storytelling approaches mostly focused on optimizing traditional metrics such as BLEU, ROUGE and CIDEr. In this paper, we re-examine this problem from a different angle, by looking deep into what defines a natural and topically-coherent story. To this end, we propose three assessment criteria: relevance, coherence and expressiveness, which we observe through empirical analysis could constitute a &quot;high-quality&quot; story to the human eye. We further propose a reinforcement learning framework, ReCo-RL, with reward functions designed to capture the essence of these quality criteria. Experiments on the Visual Storytelling Dataset (VIST) with both automatic and human evaluation demonstrate that our ReCo-RL model achieves better performance than state-of-the-art baselines on both traditional metrics and the proposed new criteria.
+</details>
+</li>
+<li>
+<p><strong>ControlNet++: Improving Conditional Controls with Efficient Consistency Feedback</strong>
+Ming Li, Taojiannan Yang, Huafeng Kuang, Jie Wu, Zhaoning Wang, Xuefeng Xiao, Chen Chen
+European Conference on Computer Vision 2024
+<a href="https://api.semanticscholar.org/CorpusId:269043104" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   To enhance the controllability of text-to-image diffusion models, existing efforts like ControlNet incorporated image-based conditional controls. In this paper, we reveal that existing methods still face significant challenges in generating images that align with the image conditional controls. To this end, we propose ControlNet++, a novel approach that improves controllable generation by explicitly optimizing pixel-level cycle consistency between generated images and conditional controls. Specifically, for an input conditional control, we use a pre-trained discriminative reward model to extract the corresponding condition of the generated images, and then optimize the consistency loss between the input conditional control and extracted condition. A straightforward implementation would be generating images from random noises and then calculating the consistency loss, but such an approach requires storing gradients for multiple sampling timesteps, leading to considerable time and memory costs. To address this, we introduce an efficient reward strategy that deliberately disturbs the input images by adding noise, and then uses the single-step denoised images for reward fine-tuning. This avoids the extensive costs associated with image sampling, allowing for more efficient reward fine-tuning. Extensive experiments show that ControlNet++ significantly improves controllability under various conditional controls. For example, it achieves improvements over ControlNet by 11.1% mIoU, 13.4% SSIM, and 7.6% RMSE, respectively, for segmentation mask, line-art edge, and depth conditions. All the code, models, demo and organized data have been open sourced on our Github Repo.
+</details>
+</li>
+<li>
+<p><strong>On the evaluation of generative models in music</strong>
+Li-Chia Yang, Alexander Lerch
+Neural computing &amp; applications (Print) 2018
+<a href="https://doi.org/10.1007/s00521-018-3849-7" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+</details>
+</li>
+<li>
+<p><strong>Deep reinforcement learning for de novo drug design</strong>
+Alexander Tropsha, Olexandr Isayev, Mariya Popova
+Science Advances 2017
+<a href="https://api.semanticscholar.org/CorpusId:38125055" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   We introduce an artificial intelligence approach to de novo design of molecules with desired physical or biological properties. We have devised and implemented a novel computational strategy for de novo design of molecules with desired properties termed ReLeaSE (Reinforcement Learning for Structural Evolution). On the basis of deep and reinforcement learning (RL) approaches, ReLeaSE integrates two deep neural networks-generative and predictive-that are trained separately but are used jointly to generate novel targeted chemical libraries. ReLeaSE uses simple representation of molecules by their simplified molecular-input line-entry system (SMILES) strings only. Generative models are trained with a stack-augmented memory network to produce chemically feasible SMILES strings, and predictive models are derived to forecast the desired properties of the de novo-generated compounds. In the first phase of the method, generative and predictive models are trained separately with a supervised learning algorithm. In the second phase, both models are trained jointly with the RL approach to bias the generation of new chemical structures toward those with the desired physical and/or biological properties. In the proof-of-concept study, we have used the ReLeaSE method to design chemical libraries with a bias toward structural complexity or toward compounds with maximal, minimal, or specific range of physical properties, such as melting point or hydrophobicity, or toward compounds with inhibitory activity against Janus protein kinase 2. The approach proposed herein can find a general use for generating targeted chemical libraries of novel compounds optimized for either a single desired property or multiple properties.
+</details>
+</li>
+<li>
+<p><strong>Quantitative Characteristics of Human-Written Short Stories as a Metric for Automated Storytelling</strong>
+C. León, Pablo Gervás, Pablo Delatorre, Alan Tapscott
+New generation computing 2020
+<a href="https://api.semanticscholar.org/CorpusId:225118825" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Evaluating the extent to which computer-produced stories are structured like human-invented narratives can be an important component of the quality of a story plot. In this paper, we report on an empirical experiment in which human subjects have invented short plots in a constrained scenario. The stories were annotated according to features commonly found in existing automatic story generators. The annotation was designed to measure the proportion and relations of story components that should be used in automatic computational systems for matching human behaviour. Results suggest that there are relatively common patterns that can be used as input data for identifying similarity to human-invented stories in automatic storytelling systems. The found patterns are in line with narratological models, and the results provide numerical quantification and layout of story components. The proposed method of story analysis is tested over two additional sources, the ROCStories corpus and stories generated by automated storytellers, to illustrate the valuable insights that may be derived from them.
+</details>
+</li>
+<li>
+<p><strong>Reinforcement Learning for Generative AI: State of the Art, Opportunities and Open Research Challenges</strong>
+Giorgio Franceschelli, Mirco Musolesi
+Journal of Artificial Intelligence Research 2023
+<a href="https://api.semanticscholar.org/CorpusId:260351093" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Generative Artificial Intelligence (AI) is one of the most exciting developments in Computer Science of the last decade. At the same time, Reinforcement Learning (RL) has emerged as a very successful paradigm for a variety of machine learning tasks. In this survey, we discuss the state of the art, opportunities and open research questions in applying RL to generative AI. In particular, we will discuss three types of applications, namely, RL as an alternative way for generation without specified objectives; as a way for generating outputs while concurrently maximizing an objective function; and, finally, as a way of embedding desired characteristics, which cannot be easily captured by means of an objective function, into the generative process. We conclude the survey with an in-depth discussion of the opportunities and challenges in this fascinating emerging area.
+</details>
+</li>
+<li>
+<p><strong>Copyright-Aware Incentive Scheme for Generative Art Models Using Hierarchical Reinforcement Learning</strong>
+Lingjuan Lyu, Zhuan Shi, Yifei Song, Xiaoli Tang, Boi Faltings
+arXiv.org 2024
+<a href="https://api.semanticscholar.org/CorpusId:273654195" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Generative art using Diffusion models has achieved remarkable performance in image generation and text-to-image tasks. However, the increasing demand for training data in generative art raises significant concerns about copyright infringement, as models can produce images highly similar to copyrighted works. Existing solutions attempt to mitigate this by perturbing Diffusion models to reduce the likelihood of generating such images, but this often compromises model performance. Another approach focuses on economically compensating data holders for their contributions, yet it fails to address copyright loss adequately. Our approach begin with the introduction of a novel copyright metric grounded in copyright law and court precedents on infringement. We then employ the TRAK method to estimate the contribution of data holders. To accommodate the continuous data collection process, we divide the training into multiple rounds. Finally, We designed a hierarchical budget allocation method based on reinforcement learning to determine the budget for each round and the remuneration of the data holder based on the data holder's contribution and copyright loss in each round. Extensive experiments across three datasets show that our method outperforms all eight benchmarks, demonstrating its effectiveness in optimizing budget distribution in a copyright-aware manner. To the best of our knowledge, this is the first technical work that introduces to incentive contributors and protect their copyrights by compensating them.
+</details>
+</li>
+<li>
+<p><strong>Shaping Rewards for Reinforcement Learning with Imperfect Demonstrations using Generative Models</strong>
+Yuchen Wu, Melissa Mozifian, F. Shkurti
+IEEE International Conference on Robotics and Automation 2020
+<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9561333" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   The potential benefits of model-free reinforcement learning to real robotics systems are limited by its uninformed exploration that leads to slow convergence, lack of data-efficiency, and unnecessary interactions with the environment. To address these drawbacks we propose a method that combines reinforcement and imitation learning by shaping the reward function with a state-and-action-dependent potential that is trained from demonstration data, using a generative model. We show that this accelerates policy learning by specifying high-value areas of the state and action space that are worth exploring first. Unlike the majority of existing methods that assume optimal demonstrations and incorporate the demonstration data as hard constraints on policy optimization, we instead incorporate demonstration data as advice in the form of a reward shaping potential trained as a generative model of states and actions. In particular, we examine both normalizing flows and Generative Adversarial Networks to represent these potentials. We show that, unlike many existing approaches that incorporate demonstrations as hard constraints, our approach is unbiased even in the case of suboptimal and noisy demonstrations. We present an extensive range of simulations, as well as experiments on the Franka Emika 7DOF arm, to demonstrate the practicality of our method.
+</details>
+</li>
+<li>
+<p><strong>Fantastic Rewards and How to Tame Them: A Case Study on Reward Learning for Task-oriented Dialogue Systems</strong>
+Caiming Xiong, Shentao Yang, Shujian Zhang, Haiquan Wang, Mi Zhou, Yihao Feng, Jianguo Zhang
+International Conference on Learning Representations 2023
+<a href="https://api.semanticscholar.org/CorpusId:253155221" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   When learning task-oriented dialogue (ToD) agents, reinforcement learning (RL) techniques can naturally be utilized to train dialogue strategies to achieve user-specific goals. Prior works mainly focus on adopting advanced RL techniques to train the ToD agents, while the design of the reward function is not well studied. This paper aims at answering the question of how to efficiently learn and leverage a reward function for training end-to-end (E2E) ToD agents. Specifically, we introduce two generalized objectives for reward-function learning, inspired by the classical learning-to-rank literature. Further, we utilize the learned reward function to guide the training of the E2E ToD agent. With the proposed techniques, we achieve competitive results on the E2E response-generation task on the Multiwoz 2.0 dataset. Source code and checkpoints are publicly released at https://github.com/Shentao-YANG/Fantastic_Reward_ICLR2023.
+</details>
+</li>
+<li>
+<p><strong>Efficient (Soft) Q-Learning for Text Generation with Limited Good Data</strong>
+Han Guo, Bowen Tan, Zhiting Hu, Eric P. Xing, Zhengzhong Liu
+Conference on Empirical Methods in Natural Language Processing 2021
+<a href="https://api.semanticscholar.org/CorpusId:253098270" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Maximum likelihood estimation (MLE) is the predominant algorithm for training text generation models. This paradigm relies on direct supervision examples, which is not applicable to many emerging applications, such as generating adversarial attacks or generating prompts to control language models. Reinforcement learning (RL) on the other hand offers a more flexible solution by allowing users to plug in arbitrary task metrics as reward. Yet previous RL algorithms for text generation, such as policy gradient (on-policy RL) and Q-learning (off-policy RL), are often notoriously inefficient or unstable to train due to the large sequence space and the sparse reward received only at the end of sequences. In this paper, we introduce a new RL formulation for text generation from the soft Q-learning (SQL) perspective. It enables us to draw from the latest RL advances, such as path consistency learning, to combine the best of on-/off-policy updates, and learn effectively from sparse reward. We apply the approach to a wide range of novel text generation tasks, including learning from noisy/negative examples, adversarial attacks, and prompt generation. Experiments show our approach consistently outperforms both task-specialized algorithms and the previous RL methods.
+</details>
+</li>
+<li>
+<p><strong>Deep Reward Supervisions for Tuning Text-to-Image Diffusion Models</strong>
+Xiaoshi Wu, Yiming Hao, Manyuan Zhang, Keqiang Sun, Zhaoyang Huang, Guanglu Song, Yu Liu, Hongsheng Li
+European Conference on Computer Vision 2024
+<a href="https://api.semanticscholar.org/CorpusId:269502093" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Optimizing a text-to-image diffusion model with a given reward function is an important but underexplored research area. In this study, we propose Deep Reward Tuning (DRTune), an algorithm that directly supervises the final output image of a text-to-image diffusion model and back-propagates through the iterative sampling process to the input noise. We find that training earlier steps in the sampling process is crucial for low-level rewards, and deep supervision can be achieved efficiently and effectively by stopping the gradient of the denoising network input. DRTune is extensively evaluated on various reward models. It consistently outperforms other algorithms, particularly for low-level control signals, where all shallow supervision methods fail. Additionally, we fine-tune Stable Diffusion XL 1.0 (SDXL 1.0) model via DRTune to optimize Human Preference Score v2.1, resulting in the Favorable Diffusion XL 1.0 (FDXL 1.0) model. FDXL 1.0 significantly enhances image quality compared to SDXL 1.0 and reaches comparable quality compared with Midjourney v5.2.
+</details>
+</li>
+<li>
+<p><strong>Energy-Based Models for Code Generation under Compilability Constraints</strong>
+Tomasz Korbak, Hady ElSahar, Marc Dymetman, Germán Kruszewski
+arXiv.org 2021
+<a href="https://api.semanticscholar.org/CorpusId:235377032" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Neural language models can be successfully trained on source code, leading to applications such as code completion. However, their versatile autoregressive self-supervision objective overlooks important global sequence-level features that are present in the data such as syntactic correctness or compilability. In this work, we pose the problem of learning to generate compilable code as constraint satisfaction. We define an Energy-Based Model (EBM) representing a pre-trained generative model with an imposed constraint of generating only compilable sequences. We then use the KL-Adaptive Distributional Policy Gradient algorithm (Khalifa et al., 2021) to train a generative model approximating the EBM. We conduct experiments showing that our proposed approach is able to improve compilability rates without sacrificing diversity and complexity of the generated samples.
+</details>
+</li>
+<li>
+<p><strong>Predicting the Quality of Short Narratives from Social Media</strong>
+Tong Wang, Ping Chen, Boyang Albert Li
+International Joint Conference on Artificial Intelligence 2017
+<a href="https://api.semanticscholar.org/CorpusId:4346268" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   An important and difficult challenge in building computational models for narratives is the automatic evaluation of narrative quality. Quality evaluation connects narrative understanding and generation as generation systems need to evaluate their own products. To circumvent difficulties in acquiring annotations, we employ upvotes in social media as an approximate measure for story quality. We collected 54,484 answers from a crowd-powered question-and-answer website, Quora, and then used active learning to build a classifier that labeled 28,320 answers as stories. To predict the number of upvotes without the use of social network features, we create neural networks that model textual regions and the interdependence among regions, which serve as strong benchmarks for future research. To our best knowledge, this is the first large-scale study for automatic evaluation of narrative quality.
+</details>
+</li>
+<li>
+<p><strong>Choose Your Own Adventure: Paired Suggestions in Collaborative Writing for Evaluating Story Generation Models</strong>
+Elizabeth Clark, Noah A. Smith
+North American Chapter of the Association for Computational Linguistics 2021
+<a href="https://api.semanticscholar.org/CorpusId:235097206" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Story generation is an open-ended and subjective task, which poses a challenge for evaluating story generation models. We present Choose Your Own Adventure, a collaborative writing setup for pairwise model evaluation. Two models generate suggestions to people as they write a short story; we ask writers to choose one of the two suggestions, and we observe which model’s suggestions they prefer. The setup also allows further analysis based on the revisions people make to the suggestions. We show that these measures, combined with automatic metrics, provide an informative picture of the models’ performance, both in cases where the differences in generation methods are small (nucleus vs. top-k sampling) and large (GPT2 vs. Fusion models).
+</details>
+</li>
+<li>
+<p><strong>The Next Chapter: A Study of Large Language Models in Storytelling</strong>
+Zhuohan Xie, Trevor Cohn, Jey Han Lau
+International Conference on Natural Language Generation 2023
+<a href="https://api.semanticscholar.org/CorpusId:260125086" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   To enhance the quality of generated stories, recent story generation models have been investigating the utilization of higher-level attributes like plots or commonsense knowledge. The application of prompt-based learning with large language models (LLMs), exemplified by GPT-3, has exhibited remarkable performance in diverse natural language processing (NLP) tasks. This paper conducts a comprehensive investigation, utilizing both automatic and human evaluation, to compare the story generation capacity of LLMs with recent models across three datasets with variations in style, register, and length of stories. The results demonstrate that LLMs generate stories of significantly higher quality compared to other story generation models. Moreover, they exhibit a level of performance that competes with human authors, albeit with the preliminary observation that they tend to replicate real stories in situations involving world knowledge, resembling a form of plagiarism.
+</details>
+</li>
+<li>
+<p><strong>Skywork-Reward: Bag of Tricks for Reward Modeling in LLMs</strong>
+Chris Liu, Liang Zeng, Jiacai Liu, Rui Yan, Jujie He, Chaojie Wang, Shuicheng Yan, Yang Liu, Yahui Zhou
+arXiv.org 2024
+<a href="https://api.semanticscholar.org/CorpusId:273549327" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   In this report, we introduce a collection of methods to enhance reward modeling for LLMs, focusing specifically on data-centric techniques. We propose effective data selection and filtering strategies for curating high-quality open-source preference datasets, culminating in the Skywork-Reward data collection, which contains only 80K preference pairs -- significantly smaller than existing datasets. Using this curated dataset, we developed the Skywork-Reward model series -- Skywork-Reward-Gemma-27B and Skywork-Reward-Llama-3.1-8B -- with the former currently holding the top position on the RewardBench leaderboard. Notably, our techniques and datasets have directly enhanced the performance of many top-ranked models on RewardBench, highlighting the practical impact of our contributions in real-world preference learning applications.
+</details>
+</li>
+<li>
+<p><strong>Diversity-Rewarded CFG Distillation</strong>
+Geoffrey Cideron, Andrea Agostinelli, Johan Ferret, Sertan Girgin, R. Élie, Olivier Bachem, Sarah Perrin, Alexandre Ram’e
+arXiv.org 2024
+<a href="https://api.semanticscholar.org/CorpusId:273228630" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Generative models are transforming creative domains such as music generation, with inference-time strategies like Classifier-Free Guidance (CFG) playing a crucial role. However, CFG doubles inference cost while limiting originality and diversity across generated contents. In this paper, we introduce diversity-rewarded CFG distillation, a novel finetuning procedure that distills the strengths of CFG while addressing its limitations. Our approach optimises two training objectives: (1) a distillation objective, encouraging the model alone (without CFG) to imitate the CFG-augmented predictions, and (2) an RL objective with a diversity reward, promoting the generation of diverse outputs for a given prompt. By finetuning, we learn model weights with the ability to generate high-quality and diverse outputs, without any inference overhead. This also unlocks the potential of weight-based model merging strategies: by interpolating between the weights of two models (the first focusing on quality, the second on diversity), we can control the quality-diversity trade-off at deployment time, and even further boost performance. We conduct extensive experiments on the MusicLM (Agostinelli et al., 2023) text-to-music generative model, where our approach surpasses CFG in terms of quality-diversity Pareto optimality. According to human evaluators, our finetuned-then-merged model generates samples with higher quality-diversity than the base model augmented with CFG. Explore our generations at https://google-research.github.io/seanet/musiclm/diverse_music/.
+</details>
+</li>
+<li>
+<p><strong>Exposing flaws of generative model evaluation metrics and their unfair treatment of diffusion models</strong>
+G. Stein, Jesse C. Cresswell, Rasa Hosseinzadeh, Yi Sui, Brendan Leigh Ross, Valentin Villecroze, Zhaoyan Liu, Anthony L. Caterini, J. E. T. Taylor, G. Loaiza-Ganem
+Neural Information Processing Systems 2023
+<a href="https://arxiv.org/pdf/2306.04675.pdf" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   We systematically study a wide variety of generative models spanning semantically-diverse image datasets to understand and improve the feature extractors and metrics used to evaluate them. Using best practices in psychophysics, we measure human perception of image realism for generated samples by conducting the largest experiment evaluating generative models to date, and find that no existing metric strongly correlates with human evaluations. Comparing to 17 modern metrics for evaluating the overall performance, fidelity, diversity, rarity, and memorization of generative models, we find that the state-of-the-art perceptual realism of diffusion models as judged by humans is not reflected in commonly reported metrics such as FID. This discrepancy is not explained by diversity in generated samples, though one cause is over-reliance on Inception-V3. We address these flaws through a study of alternative self-supervised feature extractors, find that the semantic information encoded by individual networks strongly depends on their training procedure, and show that DINOv2-ViT-L/14 allows for much richer evaluation of generative models. Next, we investigate data memorization, and find that generative models do memorize training examples on simple, smaller datasets like CIFAR10, but not necessarily on more complex datasets like ImageNet. However, our experiments show that current metrics do not properly detect memorization: none in the literature is able to separate memorization from other phenomena such as underfitting or mode shrinkage. To facilitate further development of generative models and their evaluation we release all generated image datasets, human evaluation data, and a modular library to compute 17 common metrics for 9 different encoders at https://github.com/layer6ai-labs/dgm-eval.
+</details>
+</li>
+<li>
+<p><strong>How interesting and coherent are the stories generated by a large‐scale neural language model? Comparing human and automatic evaluations of machine‐generated text</strong>
+Dominic Callan, Jennifer Foster
+Expert Syst. J. Knowl. Eng. 2023
+<a href="https://api.semanticscholar.org/CorpusId:257815973" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Evaluation of the narrative text generated by machines has traditionally been a challenge, particularly when attempting to evaluate subjective elements such as interest or believability. Recent improvements in narrative machine text generation have been largely driven by the emergence of transformer‐based language models, trained on massive quantities of data, resulting in higher quality text generation. In this study, a corpus of stories is generated using the pre‐trained GPT‐Neo transformer model, with human‐written prompts as inputs upon which to base the narrative text. The stories generated through this process are subsequently evaluated through both human evaluation and two automated metrics: BERTScore and BERT Next Sentence Prediction, with the aim of determining whether there is a correlation between the automatic scores and the human judgements. The results show variation in human evaluation results in comparison to modern automated metrics, suggesting further work is required to train automated metrics to identify text that is defined as interesting by humans.
+</details>
+</li>
+<li>
+<p><strong>STORIUM: A Dataset and Evaluation Platform for Machine-in-the-Loop Story Generation</strong>
+Nader Akoury, Shufan Wang, Josh Whiting, Stephen Hood, Nanyun Peng, Mohit Iyyer
+Conference on Empirical Methods in Natural Language Processing 2020
+<a href="https://api.semanticscholar.org/CorpusId:236941431" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Systems for story generation are asked to produce plausible and enjoyable stories given an input context. This task is underspecified, as a vast number of diverse stories can originate from a single input. The large output space makes it difficult to build and evaluate story generation models, as (1) existing datasets lack rich enough contexts to meaningfully guide models, and (2) existing evaluations (both crowdsourced and automatic) are unreliable for assessing long-form creative text. To address these issues, we introduce a dataset and evaluation platform built from STORIUM, an online collaborative storytelling community. Our author-generated dataset contains 6K lengthy stories (125M tokens) with fine-grained natural language annotations (e.g., character goals and attributes) interspersed throughout each narrative, forming a robust source for guiding models. We evaluate language models fine-tuned on our dataset by integrating them onto STORIUM, where real authors can query a model for suggested story continuations and then edit them. Automatic metrics computed over these edits correlate well with both user ratings of generated stories and qualitative feedback from semi-structured user interviews. We release both the STORIUM dataset and evaluation platform to spur more principled research into story generation.
+</details>
+</li>
+<li>
+<p><strong>Decoding Methods for Neural Narrative Generation</strong>
+Alexandra DeLucia, Aaron Mueller, Xiang Lisa Li, João Sedoc
+IEEE Games Entertainment Media Conference 2020
+<a href="https://api.semanticscholar.org/CorpusId:222378698" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Narrative generation is an open-ended NLP task in which a model generates a story given a prompt. The task is similar to neural response generation for chatbots; however, innovations in response generation are often not applied to narrative generation, despite the similarity between these tasks. We aim to bridge this gap by applying and evaluating advances in decoding methods for neural response generation to neural narrative generation. In particular, we employ GPT-2 and perform ablations across nucleus sampling thresholds and diverse decoding hyperparameters-specifically, maximum mutual information-analyzing results over multiple criteria with automatic and human evaluation. We find that (1) nucleus sampling is generally best with thresholds between 0.7 and 0.9; (2) a maximum mutual information objective can improve the quality of generated stories; and (3) established automatic metrics do not correlate well with human judgments of narrative quality on any qualitative metric.
+</details>
+</li>
+<li>
+<p><strong>Objective Evaluation Metric for Motion Generative Models: Validating Fréchet Motion Distance on Foot Skating and Over-smoothing Artifacts.</strong>
+Antoine Maiorca, Hugo Bohy, Youngwoo Yoon, Thierry Dutoit
+Motion in Games 2023
+<a href="https://api.semanticscholar.org/CorpusId:264555976" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Nowadays, Deep Learning-powered generative models are able to generate new synthetic samples nearly indistinguishable from natural data. The development of such systems necessarily involves the design of evaluation protocols to assess their performance. Quantitative objective metrics, such as Fréchet distance, in addition to human-centered subjective surveys, have become a standard for evaluating generative algorithms. Although motion generation is a popular research field, only a few works addressed the problem of the design and validation of a robust objective evaluation metric for motion-generative models. These previous works proposed to degrade ground truth motion samples with synthetic noises (e.g., Gaussian, Salt&amp; Pepper) and studied the behavior of the proposed metric. However, this degradation does not mimic common motion artifacts produced by generative models. In this work, we propose (1) to validate Fréchet distance-based objective metrics on motion datasets degraded by two realistic motion artifacts, foot skating and over-smoothing, often found in motion synthesis results, and (2) a Fréchet Motion Distance (FMD), using Transformer-based feature extractor, able to capture the motion artifacts and also robust towards the variation of motion length.
+</details>
+</li>
+<li>
+<p><strong>Modifying Large Language Model Post-Training for Diverse Creative Writing</strong>
+John Joon Young Chung, Vishakh Padmakumar, Melissa Roemmele, Yuqian Sun, Max Kreminski
+arXiv.org 2025
+<a href="https://api.semanticscholar.org/CorpusId:277244383" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   As creative writing tasks do not have singular correct answers, large language models (LLMs) trained to perform these tasks should be able to generate diverse valid outputs. However, LLM post-training often focuses on improving generation quality but neglects to facilitate output diversity. Hence, in creative writing generation, we investigate post-training approaches to promote both output diversity and quality. Our core idea is to include deviation -- the degree of difference between a training sample and all other samples with the same prompt -- in the training objective to facilitate learning from rare high-quality instances. By adopting our approach to direct preference optimization (DPO) and odds ratio preference optimization (ORPO), we demonstrate that we can promote the output diversity of trained models while minimally decreasing quality. Our best model with 8B parameters could achieve on-par diversity as a human-created dataset while having output quality similar to the best instruction-tuned models we examined, GPT-4o and DeepSeek-R1. We further validate our approaches with a human evaluation, an ablation, and a comparison to an existing diversification approach, DivPO.
+</details>
+</li>
+<li>
+<p><strong>Learning to Reason for Long-Form Story Generation</strong>
+Alexander Gurung, Mirella Lapata
+arXiv.org 2025
+<a href="https://api.semanticscholar.org/CorpusId:277451818" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Generating high-quality stories spanning thousands of tokens requires competency across a variety of skills, from tracking plot and character arcs to keeping a consistent and engaging style. Due to the difficulty of sourcing labeled datasets and precise quality measurements, most work using large language models (LLMs) for long-form story generation uses combinations of hand-designed prompting techniques to elicit author-like behavior. This is a manual process that is highly dependent on the specific story-generation task. Motivated by the recent success of applying RL with Verifiable Rewards to domains like math and coding, we propose a general story-generation task (Next-Chapter Prediction) and a reward formulation (Verified Rewards via Completion Likelihood Improvement) that allows us to use an unlabeled book dataset as a learning signal for reasoning. We learn to reason over a story's condensed information and generate a detailed plan for the next chapter. Our reasoning is evaluated via the chapters it helps a story-generator create, and compared against non-trained and supervised finetuning (SFT) baselines. Pairwise human judgments reveal the chapters our learned reasoning produces are preferred across almost all metrics, and the effect is more pronounced in Scifi and Fantasy genres.
+</details>
+</li>
+<li>
+<p><strong>Creativity in AI: Progresses and Challenges</strong>
+Lonneke van der Plas, Antoine Bosselut, Debjit Paul, Mete Ismayilzada
+arXiv.org 2024
+<a href="https://api.semanticscholar.org/CorpusId:273507627" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Creativity is the ability to produce novel, useful, and surprising ideas, and has been widely studied as a crucial aspect of human cognition. Machine creativity on the other hand has been a long-standing challenge. With the rise of advanced generative AI, there has been renewed interest and debate regarding AI's creative capabilities. Therefore, it is imperative to revisit the state of creativity in AI and identify key progresses and remaining challenges. In this work, we survey leading works studying the creative capabilities of AI systems, focusing on creative problem-solving, linguistic, artistic, and scientific creativity. Our review suggests that while the latest AI models are largely capable of producing linguistically and artistically creative outputs such as poems, images, and musical pieces, they struggle with tasks that require creative problem-solving, abstract thinking and compositionality and their generations suffer from a lack of diversity, originality, long-range incoherence and hallucinations. We also discuss key questions concerning copyright and authorship issues with generative models. Furthermore, we highlight the need for a comprehensive evaluation of creativity that is process-driven and considers several dimensions of creativity. Finally, we propose future research directions to improve the creativity of AI outputs, drawing inspiration from cognitive science and psychology.
+</details>
+</li>
+<li>
+<p><strong>Toward Interactive Music Generation: A Position Paper</strong>
+S. Dadman, B. Bremdal, B. Bang, Rune Dalmo
+IEEE Access 2022
+<a href="https://api.semanticscholar.org/CorpusId:254331456" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Music generation using deep learning has received considerable attention in recent years. Researchers have developed various generative models capable of imitating musical conventions, comprehending the musical corpora, and generating new samples based on the learning outcome. Although the samples generated by these models are persuasive, they often lack musical structure and creativity. For instance, a vanilla end-to-end approach, which deals with all levels of music representation at once, does not offer human-level control and interaction during the learning process, leading to constrained results. Indeed, music creation is a recurrent process that follows some principles by a musician, where various musical features are reused or adapted. On the other hand, a musical piece adheres to a musical style, breaking down into precise concepts of timbre style, performance style, composition style, and the coherency between these aspects. Here, we study and analyze the current advances in music generation using deep learning models through different criteria. We discuss the shortcomings and limitations of these models regarding interactivity and adaptability. Finally, we draw the potential future research direction addressing multi-agent systems and reinforcement learning algorithms to alleviate these shortcomings and limitations.
+</details>
+</li>
+<li>
+<p><strong>Challenges in creative generative models for music: a divergence maximization perspective</strong>
+Axel Chemla-Romeu-Santos, P. Esling
+arXiv.org 2022
+<a href="https://api.semanticscholar.org/CorpusId:253553791" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   The development of generative Machine Learning (ML) models in creative prac-tices, enabled by the recent improvements in usability and availability of pre-trained models, is raising more and more interest among artists, practitioners and perform-ers. Yet, the introduction of such techniques in artistic domains also revealed multiple limitations that escape current evaluation methods used by scientists. Notably, most models are still unable to generate content that lay outside of the domain deﬁned by the training dataset. In this paper, we propose an alternative prospective framework, starting from a new general formulation of ML objectives, that we derive to delineate possible implications and solutions that already exist in the ML literature (notably for the audio and musical domain). We also discuss existing relations between generative models and computational creativity and how our framework could help address the lack of creativity in existing models.
+</details>
+</li>
+<li>
+<p><strong>Conditional End-to-End Audio Transforms</strong>
+Albert Haque, Michelle Guo, Prateek Verma
+Interspeech 2018
+<a href="https://api.semanticscholar.org/CorpusId:4554108" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   We present an end-to-end method for transforming audio from one style to another. For the case of speech, by conditioning on speaker identities, we can train a single model to transform words spoken by multiple people into multiple target voices. For the case of music, we can specify musical instruments and achieve the same result. Architecturally, our method is a fully-differentiable sequence-to-sequence model based on convolutional and hierarchical recurrent neural networks. It is designed to capture long-term acoustic dependencies, requires minimal post-processing, and produces realistic audio transforms. Ablation studies confirm that our model can separate speaker and instrument properties from acoustic content at different receptive fields. Empirically, our method achieves competitive performance on community-standard datasets.
+</details>
+</li>
+<li>
+<p><strong>Perception Score: A Learned Metric for Open-ended Text Generation Evaluation</strong>
+Jing Gu, Qingyang Wu, Zhou Yu
+AAAI Conference on Artificial Intelligence 2021
+<a href="https://api.semanticscholar.org/CorpusId:261513819" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Automatic evaluation for open-ended natural language generation tasks remains a challenge. We propose a learned evaluation metric: Perception Score. It utilizes a pre-trained model and considers context information for conditional generation. Perception Score assigns a holistic score along with the uncertainty measurement. We conduct experiments on three open-ended conditional generation tasks and two open-ended unconditional generation tasks. Perception Score achieves state-of-the-art results on all the tasks consistently in terms of correlation with human evaluation scores.
+</details>
+</li>
+<li>
+<p><strong>DeltaScore: Fine-Grained Story Evaluation with Perturbations</strong>
+Zhuohan Xie, Miao Li, Trevor Cohn, Jey Han Lau
+Conference on Empirical Methods in Natural Language Processing 2023
+<a href="https://api.semanticscholar.org/CorpusId:263831982" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Numerous evaluation metrics have been developed for natural language generation tasks, but their effectiveness in evaluating stories is limited as they are not specifically tailored to assess intricate aspects of storytelling, such as fluency and interestingness. In this paper, we introduce DELTASCORE, a novel methodology that employs perturbation techniques for the evaluation of nuanced story aspects. Our central proposition posits that the extent to which a story excels in a specific aspect (e.g., fluency) correlates with the magnitude of its susceptibility to particular perturbations (e.g., the introduction of typos). Given this, we measure the quality of an aspect by calculating the likelihood difference between pre- and post-perturbation states using pre-trained language models. We compare DELTASCORE with existing metrics on storytelling datasets from two domains in five fine-grained story aspects: fluency, coherence, relatedness, logicality, and interestingness. DELTASCORE demonstrates remarkable performance, revealing a surprising finding that a specific perturbation proves highly effective in capturing multiple aspects.
+</details>
+</li>
+<li>
+<p><strong>Creative Writing with a Machine in the Loop: Case Studies on Slogans and Stories</strong>
+Elizabeth Clark, A. S. Ross, Chenhao Tan, Yangfeng Ji, Noah A. Smith
+International Conference on Intelligent User Interfaces 2018
+<a href="http://dl.acm.org/citation.cfm?id=3172983" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+</details>
+</li>
+<li>
+<p><strong>HoLLMwood: Unleashing the Creativity of Large Language Models in Screenwriting via Role Playing</strong>
+Jing Chen, Xinyu Zhu, Cheng Yang, Chufan Shi, Yadong Xi, Yuxiang Zhang, Junjie Wang, Jiashu Pu, Rongsheng Zhang, Yujiu Yang, Tian Feng
+Conference on Empirical Methods in Natural Language Processing 2024
+<a href="https://api.semanticscholar.org/CorpusId:270559811" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Generative AI has demonstrated unprecedented creativity in the field of computer vision, yet such phenomena have not been observed in natural language processing. In particular, large language models (LLMs) can hardly produce written works at the level of human experts due to the extremely high complexity of literature writing. In this paper, we present HoLLMwood, an automated framework for unleashing the creativity of LLMs and exploring their potential in screenwriting, which is a highly demanding task. Mimicking the human creative process, we assign LLMs to different roles involved in the real-world scenario. In addition to the common practice of treating LLMs as ${Writer}$, we also apply LLMs as ${Editor}$, who is responsible for providing feedback and revision advice to ${Writer}$. Besides, to enrich the characters and deepen the plots, we introduce a role-playing mechanism and adopt LLMs as ${Actors}$ that can communicate and interact with each other. Evaluations on automatically generated screenplays show that HoLLMwood substantially outperforms strong baselines in terms of coherence, relevance, interestingness and overall quality.
+</details>
+</li>
+<li>
+<p><strong>AI as a Sport: On the Competitive Epistemologies of Benchmarking</strong>
+Will Orr, Edward B. Kang
+Conference on Fairness, Accountability and Transparency 2024
+<a href="https://api.semanticscholar.org/CorpusId:270286786" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Artificial Intelligence (AI) systems are evaluated using competitive methods that rely on benchmark datasets to determine performance. These benchmark datasets, however, are often constructed through arbitrary processes that fall short in encapsulating the depth and breadth of the tasks they are intended to measure. In this paper, we interrogate the naturalization of benchmark datasets as veracious metrics by examining the historical development of benchmarking as an epistemic practice in AI research. Specifically, we highlight three key case studies that were crucial in establishing the existing reliance on benchmark datasets for evaluating the capabilities of AI systems: (1) the sharing of Highleyman’s OCR dataset in the 1960s, which solidified a community of knowledge production around a shared benchmark dataset, (2) the Common Task Framework (CTF) of the 1980s, a state-led project to standardize benchmark datasets as legitimate indicators of technical progress; and (3) the Netflix Prize which further solidified benchmarking as a competitive goal within the ML research community. This genealogy highlights how contemporary dynamics and limitations of benchmarking developed from a longer history of collaboration, standardization, and competition. We end with reflections on how this history informs our understanding of benchmarking in the current era of generative artificial intelligence.
+</details>
+</li>
+<li>
+<p><strong>Evaluating Large Language Model Creativity from a Literary Perspective</strong>
+Murray Shanahan, Catherine Clarke
+arXiv.org 2023
+<a href="https://api.semanticscholar.org/CorpusId:266053546" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   This paper assesses the potential for large language models (LLMs) to serve as assistive tools in the creative writing process, by means of a single, in-depth case study. In the course of the study, we develop interactive and multi-voice prompting strategies that interleave background descriptions (scene setting, plot elements), instructions that guide composition, samples of text in the target style, and critical discussion of the given samples. We qualitatively evaluate the results from a literary critical perspective, as well as from the standpoint of computational creativity (a sub-field of artificial intelligence). Our findings lend support to the view that the sophistication of the results that can be achieved with an LLM mirrors the sophistication of the prompting.
+</details>
+</li>
+<li>
+<p><strong>Art or Artifice? Large Language Models and the False Promise of Creativity</strong>
+Tuhin Chakrabarty, Philippe Laban, Divyansh Agarwal, Chien-Sheng Wu, Smaranda Muresan
+International Conference on Human Factors in Computing Systems 2023
+<a href="https://api.semanticscholar.org/CorpusId:262826094" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Researchers have argued that large language models (LLMs) exhibit high-quality writing capabilities from blogs to stories. However, evaluating objectively the creativity of a piece of writing is challenging. Inspired by the Torrance Test of Creative Thinking (TTCT) [64], which measures creativity as a process, we use the Consensual Assessment Technique [3] and propose Torrance Test of Creative Writing (TTCW) to evaluate creativity as product. TTCW consists of 14 binary tests organized into the original dimensions of Fluency, Flexibility, Originality, and Elaboration. We recruit 10 creative writers and implement a human assessment of 48 stories written either by professional authors or LLMs using TTCW. Our analysis shows that LLM-generated stories pass 3-10X less TTCW tests than stories written by professionals. In addition, we explore the use of LLMs as assessors to automate the TTCW evaluation, revealing that none of the LLMs positively correlate with the expert assessments.
+</details>
+</li>
+<li>
+<p><strong>The Perils of Using Mechanical Turk to Evaluate Open-Ended Text Generation</strong>
+Marzena Karpinska, Nader Akoury, Mohit Iyyer
+Conference on Empirical Methods in Natural Language Processing 2021
+<a href="https://www.aclanthology.org/2021.emnlp-main.97.pdf" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Recent text generation research has increasingly focused on open-ended domains such as story and poetry generation. Because models built for such tasks are difficult to evaluate automatically, most researchers in the space justify their modeling choices by collecting crowdsourced human judgments of text quality (e.g., Likert scores of coherence or grammaticality) from Amazon Mechanical Turk (AMT). In this paper, we first conduct a survey of 45 open-ended text generation papers and find that the vast majority of them fail to report crucial details about their AMT tasks, hindering reproducibility. We then run a series of story evaluation experiments with both AMT workers and English teachers and discover that even with strict qualification filters, AMT workers (unlike teachers) fail to distinguish between model-generated text and human-generated references. We show that AMT worker judgments improve when they are shown model-generated output alongside human-generated references, which enables the workers to better calibrate their ratings. Finally, interviews with the English teachers provide deeper insights into the challenges of the evaluation process, particularly when rating model-generated text.
+</details>
+</li>
+<li>
+<p><strong>Follow the Wisdom of the Crowd: Effective Text Generation via Minimum Bayes Risk Decoding</strong>
+Mirac Suzgun, Luke Melas-Kyriazi, Dan Jurafsky
+Annual Meeting of the Association for Computational Linguistics 2022
+<a href="https://api.semanticscholar.org/CorpusId:253510790" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   In open-ended natural-language generation, existing text decoding methods typically struggle to produce text which is both diverse and high-quality. Greedy and beam search are known to suffer from text degeneration and linguistic diversity issues, while temperature, top-k, and nucleus sampling often yield diverse but low-quality outputs. In this work, we present crowd sampling, a family of decoding methods based on Bayesian risk minimization, to address this diversity-quality trade-off. Inspired by the principle of&quot;the wisdom of the crowd,&quot;crowd sampling seeks to select a candidate from a pool of candidates that has the least expected risk (i.e., highest expected reward) under a generative model according to a given utility function. Crowd sampling can be seen as a generalization of numerous existing methods, including majority voting, and in practice, it can be used as a drop-in replacement for existing sampling methods. Extensive experiments show that crowd sampling delivers improvements of 3-7 ROUGE and BLEU points across a wide range of tasks, including summarization, data-to-text, translation, and textual style transfer, while achieving new state-of-the-art results on WebNLG and WMT'16.
+</details>
+</li>
+<li>
+<p><strong>Reproducible Subjective Evaluation</strong>
+Max Morrison, Brian Tang, Gefei Tan, Bryan Pardo
+arXiv.org 2022
+<a href="https://api.semanticscholar.org/CorpusId:247318562" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Human perceptual studies are the gold standard for the evaluation of many research tasks in machine learning, linguistics, and psychology. However, these studies require significant time and cost to perform. As a result, many researchers use objective measures that can correlate poorly with human evaluation. When subjective evaluations are performed, they are often not reported with sufficient detail to ensure reproducibility. We propose Reproducible Subjective Evaluation (ReSEval), an open-source framework for quickly deploying crowdsourced subjective evaluations directly from Python. ReSEval lets researchers launch A/B, ABX, Mean Opinion Score (MOS) and MUltiple Stimuli with Hidden Reference and Anchor (MUSHRA) tests on audio, image, text, or video data from a command-line interface or using one line of Python, making it as easy to run as objective evaluation. With ReSEval, researchers can reproduce each other's subjective evaluations by sharing a configuration file and the audio, image, text, or video files.
+</details>
+</li>
+<li>
+<p><strong>Not (yet) the whole story: Evaluating Visual Storytelling Requires More than Measuring Coherence, Grounding, and Repetition</strong>
+Sandro Pezzelle, Aditya K Surikuchi, Raquel Fern’andez
+Conference on Empirical Methods in Natural Language Processing 2024
+<a href="https://api.semanticscholar.org/CorpusId:271039930" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Visual storytelling consists in generating a natural language story given a temporally ordered sequence of images. This task is not only challenging for models, but also very difficult to evaluate with automatic metrics since there is no consensus about what makes a story 'good'. In this paper, we introduce a novel method that measures story quality in terms of human likeness regarding three key aspects highlighted in previous work: visual grounding, coherence, and repetitiveness. We then use this method to evaluate the stories generated by several models, showing that the foundation model LLaVA obtains the best result, but only slightly so compared to TAPM, a 50-times smaller visual storytelling model. Upgrading the visual and language components of TAPM results in a model that yields competitive performance with a relatively low number of parameters. Finally, we carry out a human evaluation study, whose results suggest that a 'good' story may require more than a human-like level of visual grounding, coherence, and repetition.
+</details>
+</li>
+<li>
+<p><strong>On the Problem of Small Objects</strong>
+Tiasa Mondol, Daniel G. Brown
+Entropy 2021
+<a href="https://api.semanticscholar.org/CorpusId:244293725" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   We discuss how to assess computationally the aesthetic value of &quot;small&quot; objects, namely those that have short digital descriptions. Such small objects still matter: they include headlines, poems, song lyrics, short musical scripts and other culturally crucial items. Yet, small objects are a confounding case for our recent work adapting ideas from algorithmic information theory (AIT) to the domain of computational creativity, as they cannot be either logically deep or sophisticated following the traditional definitions of AIT. We show how restricting the class of models under analysis can make it the case that we can still separate high-quality small objects from ordinary ones, and discuss the strengths and limitations of our adaptation.
+</details>
+</li>
+<li>
+<p><strong>Creative Help: A Story Writing Assistant</strong>
+Melissa Roemmele, A. Gordon
+International Conference on Interactive Digital Storytelling 2015
+<a href="https://doi.org/10.1007/978-3-319-27036-4_8" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+</details>
+</li>
+<li>
+<p><strong>Better Together? An Evaluation of AI-Supported Code Translation</strong>
+Justin D. Weisz, Michael J. Muller, Steven I. Ross, Fernando Martinez, Stephanie Houde, Mayank Agarwal, Kartik Talamadupula, John T. Richards
+International Conference on Intelligent User Interfaces 2022
+<a href="https://api.semanticscholar.org/CorpusId:246867366" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Generative machine learning models have recently been applied to source code, for use cases including translating code between programming languages, creating documentation from code, and auto-completing methods. Yet, state-of-the-art models often produce code that is erroneous or incomplete. In a controlled study with 32 software engineers, we examined whether such imperfect outputs are helpful in the context of Java-to-Python code translation. When aided by the outputs of a code translation model, participants produced code with fewer errors than when working alone. We also examined how the quality and quantity of AI translations affected the work process and quality of outcomes, and observed that providing multiple translations had a larger impact on the translation process than varying the quality of provided translations. Our results tell a complex, nuanced story about the benefits of generative code models and the challenges software engineers face when working with their outputs. Our work motivates the need for intelligent user interfaces that help software engineers effectively work with generative code models in order to understand and evaluate their outputs and achieve superior outcomes to working alone.
+</details>
+</li>
+<li>
+<p><strong>A Unifying Information-theoretic Perspective on Evaluating Generative Models</strong>
+Alexis Fox, S. Swarup, Abhijin Adiga
+AAAI Conference on Artificial Intelligence 2024
+<a href="https://api.semanticscholar.org/CorpusId:274859469" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Considering the difficulty of interpreting generative model output, there is significant current research focused on determining meaningful evaluation metrics. Several recent approaches utilize &quot;precision&quot; and &quot;recall,&quot; borrowed from the classification domain, to individually quantify the output fidelity (realism) and output diversity (representation of the real data variation), respectively. With the increase in metric proposals, there is a need for a unifying perspective, allowing for easier comparison and clearer explanation of their benefits and drawbacks. To this end, we unify a class of kth-nearest neighbors (kNN)-based metrics under an information-theoretic lens using approaches from kNN density estimation. Additionally, we propose a tri-dimensional metric composed of Precision Cross-Entropy (PCE), Recall Cross-Entropy (RCE), and Recall Entropy (RE), which separately measure fidelity and two distinct aspects of diversity, inter- and intra-class. Our domain-agnostic metric, derived from the information-theoretic concepts of entropy and cross-entropy, can be dissected for both sample- and mode-level analysis. Our detailed experimental results demonstrate the sensitivity of our metric components to their respective qualities and reveal undesirable behaviors of other metrics.
+</details>
+</li>
+<li>
+<p><strong>CoAuthor: Designing a Human-AI Collaborative Writing Dataset for Exploring Language Model Capabilities</strong>
+Mina Lee, Percy Liang, Qian Yang
+International Conference on Human Factors in Computing Systems 2022
+<a href="https://api.semanticscholar.org/CorpusId:246016439" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Large language models (LMs) offer unprecedented language generation capabilities and exciting opportunities for interaction design. However, their highly context-dependent capabilities are difficult to grasp and are often subjectively interpreted. In this paper, we argue that by curating and analyzing large interaction datasets, the HCI community can foster more incisive examinations of LMs’ generative capabilities. Exemplifying this approach, we present CoAuthor, a dataset designed for revealing GPT-3’s capabilities in assisting creative and argumentative writing. CoAuthor captures rich interactions between 63 writers and four instances of GPT-3 across 1445 writing sessions. We demonstrate that CoAuthor can address questions about GPT-3’s language, ideation, and collaboration capabilities, and reveal its contribution as a writing “collaborator” under various definitions of good collaboration. Finally, we discuss how this work may facilitate a more principled discussion around LMs’ promises and pitfalls in relation to interaction design. The dataset and an interface for replaying the writing sessions are publicly available at https://coauthor.stanford.edu.
+</details>
+</li>
+<li>
+<p><strong>The Value, Benefits, and Concerns of Generative AI-Powered Assistance in Writing</strong>
+Zhuoyan Li, Chen Liang, Jing Peng, Ming Yin
+International Conference on Human Factors in Computing Systems 2024
+<a href="https://api.semanticscholar.org/CorpusId:268532053" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Recent advances in generative AI technologies like large language models raise both excitement and concerns about the future of human-AI co-creation in writing. To unpack people's attitude towards and experience with generative AI-powered writing assistants, in this paper, we conduct an experiment to understand whether and how much value people attach to AI assistance, and how the incorporation of AI assistance in writing workflows changes people's writing perceptions and performance. Our results suggest that people are willing to forgo financial payments to receive writing assistance from AI, especially if AI can provide direct content generation assistance and the writing task is highly creative. Generative AI-powered assistance is found to offer benefits in increasing people's productivity and confidence in writing. However, direct content generation assistance offered by AI also comes with risks, including decreasing people's sense of accountability and diversity in writing. We conclude by discussing the implications of our findings.
+</details>
+</li>
+<li>
+<p><strong>Of Human Criteria and Automatic Metrics: A Benchmark of the Evaluation of Story Generation</strong>
+Cyril Chhun, Pierre Colombo, C. Clavel, Fabian M. Suchanek
+International Conference on Computational Linguistics 2022
+<a href="https://api.semanticscholar.org/CorpusId:251765463" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Research on Automatic Story Generation (ASG) relies heavily on human and automatic evaluation. However, there is no consensus on which human evaluation criteria to use, and no analysis of how well automatic criteria correlate with them. In this paper, we propose to re-evaluate ASG evaluation. We introduce a set of 6 orthogonal and comprehensive human criteria, carefully motivated by the social sciences literature. We also present HANNA, an annotated dataset of 1,056 stories produced by 10 different ASG systems. HANNA allows us to quantitatively evaluate the correlations of 72 automatic metrics with human criteria. Our analysis highlights the weaknesses of current metrics for ASG and allows us to formulate practical recommendations for ASG evaluation.
+</details>
+</li>
+<li>
+<p><strong>Measuring Diversity in Co-creative Image Generation</strong>
+F. Ibarrola, Kazjon Grace
+International Conference on Innovative Computing and Cloud Computing 2024
+<a href="https://api.semanticscholar.org/CorpusId:268554054" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Quality and diversity have been proposed as reasonable heuristics for assessing content generated by co-creative systems, but to date there has been little agreement around what constitutes the latter or how to measure it. Proposed approaches for assessing generative models in terms of diversity have limitations in that they compare the model's outputs to a ground truth that in the era of large pre-trained generative models might not be available, or entail an impractical number of computations. We propose an alternative based on entropy of neural network encodings for comparing diversity between sets of images that does not require ground-truth knowledge and is easy to compute. We also compare two pre-trained networks and show how the choice relates to the notion of diversity that we want to evaluate. We conclude with a discussion of the potential applications of these measures for ideation in interactive systems, model evaluation, and more broadly within computational creativity.
+</details>
+</li>
+<li>
+<p><strong>Strategies for Structuring Story Generation</strong>
+Angela Fan, M. Lewis, Yann Dauphin
+Annual Meeting of the Association for Computational Linguistics 2019
+<a href="https://www.aclweb.org/anthology/P19-1254.pdf" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Writers often rely on plans or sketches to write long stories, but most current language models generate word by word from left to right. We explore coarse-to-fine models for creating narrative texts of several hundred words, and introduce new models which decompose stories by abstracting over actions and entities. The model first generates the predicate-argument structure of the text, where different mentions of the same entity are marked with placeholder tokens. It then generates a surface realization of the predicate-argument structure, and finally replaces the entity placeholders with context-sensitive names and references. Human judges prefer the stories from our models to a wide range of previous approaches to hierarchical text generation. Extensive analysis shows that our methods can help improve the diversity and coherence of events and entities in generated stories.
+</details>
+</li>
+<li>
+<p><strong>Crafting Narrative Closures: Zero-Shot Learning with SSM Mamba for Short Story Ending Generation</strong>
+Divyam Sharma, Divya Santhanam
+arXiv.org 2024
+<a href="https://api.semanticscholar.org/CorpusId:273350932" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Writing stories is an engaging yet challenging endeavor. Often, authors encounter moments of creative block, where the path forward in their narrative becomes obscured. This paper is designed to address such moments by providing an innovative solution: A tool that completes stories based on given prompts. By inputting a short story prompt, users can receive a conclusion to their story, articulated in one sentence or more, thereby enhancing the storytelling process with AI-driven creativity. This tool aims not only to assist authors in navigating writer's block but also to offer a fun and interactive way for anyone to expand on story ideas spontaneously. Through this paper, we explore the intersection of artificial intelligence and creative writing, pushing the boundaries of how stories can be crafted and concluded. To create our final text-generation models, we used a pre-trained GPT-3.5 model and a newly created finetuned SSM-Mamba model, both of which perform well on a comprehensive list of metrics including BERT score, METEOR, BLEU, ROUGE, and Perplexity. The SSM model has also been made public for the NLP community on HuggingFace models as an open source contribution, which for the timebeing is a first of its kind state-space model for story-generation task on HuggingFace.
+</details>
+</li>
+<li>
+<p><strong>Random Network Distillation as a Diversity Metric for Both Image and Text Generation</strong>
+Liam H. Fowl, Micah Goldblum, Arjun Gupta, Amr Sharaf, T. Goldstein
+arXiv.org 2020
+<a href="https://api.semanticscholar.org/CorpusId:222341539" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Generative models are increasingly able to produce remarkably high quality images and text. The community has developed numerous evaluation metrics for comparing generative models. However, these metrics do not effectively quantify data diversity. We develop a new diversity metric that can readily be applied to data, both synthetic and natural, of any type. Our method employs random network distillation, a technique introduced in reinforcement learning. We validate and deploy this metric on both images and text. We further explore diversity in few-shot image generation, a setting which was previously difficult to evaluate.
+</details>
+</li>
+<li>
+<p><strong>On Measuring Fairness in Generative Models</strong>
+Milad Abdollahzadeh, Ngai-Man Cheung, Christopher T. H. Teo
+Neural Information Processing Systems 2023
+<a href="https://api.semanticscholar.org/CorpusId:264820376" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   Recently, there has been increased interest in fair generative models. In this work, we conduct, for the first time, an in-depth study on fairness measurement, a critical component in gauging progress on fair generative models. We make three contributions. First, we conduct a study that reveals that the existing fairness measurement framework has considerable measurement errors, even when highly accurate sensitive attribute (SA) classifiers are used. These findings cast doubts on previously reported fairness improvements. Second, to address this issue, we propose CLassifier Error-Aware Measurement (CLEAM), a new framework which uses a statistical model to account for inaccuracies in SA classifiers. Our proposed CLEAM reduces measurement errors significantly, e.g., 4.98% $\rightarrow$ 0.62% for StyleGAN2 w.r.t. Gender. Additionally, CLEAM achieves this with minimal additional overhead. Third, we utilize CLEAM to measure fairness in important text-to-image generator and GANs, revealing considerable biases in these models that raise concerns about their applications. Code and more resources: https://sutd-visual-computing-group.github.io/CLEAM/.
+</details>
+</li>
+<li>
+<p><strong>The GPT-WritingPrompts Dataset: A Comparative Analysis of Character Portrayal in Short Stories</strong>
+Xi Yu Huang, Krishnapriya Vishnubhotla, Frank Rudzicz
+arXiv.org 2024
+<a href="https://api.semanticscholar.org/CorpusId:270703357" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   The improved generative capabilities of large language models have made them a powerful tool for creative writing and storytelling. It is therefore important to quantitatively understand the nature of generated stories, and how they differ from human storytelling. We augment the Reddit WritingPrompts dataset with short stories generated by GPT-3.5, given the same prompts. We quantify and compare the emotional and descriptive features of storytelling from both generative processes, human and machine, along a set of six dimensions. We find that generated stories differ significantly from human stories along all six dimensions, and that human and machine generations display similar biases when grouped according to the narrative point-of-view and gender of the main protagonist. We release our dataset and code at https://github.com/KristinHuangg/gpt-writing-prompts.
+</details>
+</li>
+<li>
+<p><strong>Synthetic Literature: Writing Science Fiction in a Co-Creative Process</strong>
+Enrique Manjavacas, Folgert Karsdorp, Ben Burtenshaw, M. Kestemont
+CC-NLG@INLG 2017
+<a href="https://api.semanticscholar.org/CorpusId:36568471" class="external">open paper page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+ <details>
+   <summary> Abstract </summary>
+   This paper describes a co-creative text generation system applied within a science fiction setting to be used by an established novelist. The project was initiated as part of The Dutch Book Week, and the generated text will be published within a volume of science fiction stories. We explore the ramifications of applying Natural Language Generation within a cocreative process, and examine where the cocreative setting challenges both writer and machine. We employ a character-level language model to generate text based on a large corpus of Dutch novels that exposes a number of tunable parameters to the user. The system is used through a custom graphical user interface, that helps the writer to elicit, modify and incorporate suggestions by the text generation system. Besides a literary work, the output of the present project also includes user-generated meta-data that is expected to contribute to the quantitative evaluation of the text-generation system and the co-creative process involved.
+</details>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.0</a> © 2025</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript">function o(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.classList.contains("is-collapsed")?this.scrollHeight:t.scrollHeight;t.style.maxHeight=e+"px";let c=t,l=t.parentElement;for(;l;){if(!l.classList.contains("callout"))return;let i=l.classList.contains("is-collapsed")?l.scrollHeight:l.scrollHeight+c.scrollHeight;l.style.maxHeight=i+"px",c=l,l=l.parentElement}}function n(){let t=document.getElementsByClassName("callout is-collapsible");for(let s of t){let e=s.firstElementChild;if(!e)continue;e.addEventListener("click",o),window.addCleanup(()=>e.removeEventListener("click",o));let l=s.classList.contains("is-collapsed")?e.scrollHeight:s.scrollHeight;s.style.maxHeight=l+"px"}}document.addEventListener("nav",n);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

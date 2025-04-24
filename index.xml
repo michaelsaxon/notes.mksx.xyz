@@ -6,6 +6,12 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Papers for subjective reward modeling in GenAI</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Papers-for-subjective-reward-modeling-in-GenAI</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Papers-for-subjective-reward-modeling-in-GenAI</guid>
+    <description> ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation Jiazheng Xu, Xiao Liu, Yuchen Wu, Yuxuan Tong, Qinkai Li, Ming Ding, Jie Tang, Yuxiao Dong Neural Information Processing Systems 2023 open paper page Abstract We present a comprehensive solution to learn and improve...</description>
+    <pubDate>Thu, 24 Apr 2025 21:57:14 GMT</pubDate>
+  </item><item>
     <title>Culture as Practice Meeting Notes</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/Culture-as-Practice-Meeting-Notes</link>
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Culture-as-Practice-Meeting-Notes</guid>
@@ -59,12 +65,6 @@
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Michael-Jordan-Campus-Visit-Notes</guid>
     <description>2023-01-17 16:32 Tags: visitor talk-notes Talk 1 an engineering field: scaling new possibilities with building blocks from fundamental sciences comparable to chemE and EE from scientific principles Q: It seems like we’re not building the field on scientific principles that are as fundamental unique ...</description>
     <pubDate>Tue, 22 Apr 2025 00:37:58 GMT</pubDate>
-  </item><item>
-    <title>Mapping is not memorization</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Mapping-is-not-memorization</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Mapping-is-not-memorization</guid>
-    <description>2023-02-03 17:47 Tags: paper-planning Links: Diffusion Image Memorization Tasks for “Mapping is not Memorization” Denoising Diffusion Probabilistic Models Need to execute fast Diffusion Image Memorization arxiv.org/abs/2212.03860 twitter.com/atroyn/status/1622720622827819008 Pre-index attention maps...</description>
-    <pubDate>Tue, 22 Apr 2025 00:37:43 GMT</pubDate>
   </item>
     </channel>
   </rss>
