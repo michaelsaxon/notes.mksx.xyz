@@ -6,6 +6,18 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Plugins</title>
+    <link>https://notes.mksx.xyz/How-To/Plugins</link>
+    <guid>https://notes.mksx.xyz/How-To/Plugins</guid>
+    <description>Test www.youtube.com/watch github.com/Sasoon/obsidian-gcal-sync.</description>
+    <pubDate>Sat, 26 Apr 2025 21:50:31 GMT</pubDate>
+  </item><item>
+    <title>中文 vocab</title>
+    <link>https://notes.mksx.xyz/09-Language/%E4%B8%AD%E6%96%87-vocab</link>
+    <guid>https://notes.mksx.xyz/09-Language/%E4%B8%AD%E6%96%87-vocab</guid>
+    <description>冷笑话 stupid joke 好笑话 一点儿不好笑 一定要 →必ず 扯淡→bullshit.</description>
+    <pubDate>Sat, 26 Apr 2025 21:50:07 GMT</pubDate>
+  </item><item>
     <title>How to &quot;how to&quot; questions in English</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/How-to-%22how-to%22-questions-in-English</link>
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/How-to-%22how-to%22-questions-in-English</guid>
@@ -53,18 +65,6 @@
     <guid>https://notes.mksx.xyz/</guid>
     <description>Michael’s (Public) Obsidian Library I am hosting this mainly for myself and also so that I can point links in it to people who ask me.</description>
     <pubDate>Wed, 23 Apr 2025 01:23:46 GMT</pubDate>
-  </item><item>
-    <title>linkdump</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/linkdump</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/linkdump</guid>
-    <description>List of random links to replicate map architecture from various private settings: Y1-3 PECO Master list of todos for PECO EACL camready related work How PECO differs from Competency Problems Master list of todos for PECO EACL camready Notes from SoCalNLP D3JS Notes 2023.aclweb.org/calls/system_demon...</description>
-    <pubDate>Wed, 23 Apr 2025 00:58:47 GMT</pubDate>
-  </item><item>
-    <title>Quartz setup info</title>
-    <link>https://notes.mksx.xyz/How-To/Quartz-setup-info</link>
-    <guid>https://notes.mksx.xyz/How-To/Quartz-setup-info</guid>
-    <description>charleszw.com/posts/quartz-obsidian quartz.jzhao.xyz/features/private-pages.</description>
-    <pubDate>Tue, 22 Apr 2025 00:53:07 GMT</pubDate>
   </item>
     </channel>
   </rss>
