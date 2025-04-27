@@ -6,6 +6,12 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>ACL23 CoCoCroLa Master Notes</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/ACL23-CoCoCroLa-Master-Notes</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/ACL23-CoCoCroLa-Master-Notes</guid>
+    <description>2022-12-10 10:35 Tags: todos paper-planning Out-standing Needs Communicating model comparison findings Table 1: cov as correctness and consistency (model, language level) conceptual coverage scores and aggregate consistency scores CLIP english concept→CLIP image content coverage scores Mturk concept...</description>
+    <pubDate>Sun, 27 Apr 2025 00:55:27 GMT</pubDate>
+  </item><item>
     <title>Plugins</title>
     <link>https://notes.mksx.xyz/How-To/Plugins</link>
     <guid>https://notes.mksx.xyz/How-To/Plugins</guid>
@@ -59,12 +65,6 @@
     <guid>https://notes.mksx.xyz/How-To/Configuring-github-pages-+-subdomains</guid>
     <description>Yuuuuuge pain in the ass but I finally figured it out.</description>
     <pubDate>Wed, 23 Apr 2025 20:48:17 GMT</pubDate>
-  </item><item>
-    <title>index</title>
-    <link>https://notes.mksx.xyz/</link>
-    <guid>https://notes.mksx.xyz/</guid>
-    <description>Michael’s (Public) Obsidian Library I am hosting this mainly for myself and also so that I can point links in it to people who ask me.</description>
-    <pubDate>Wed, 23 Apr 2025 01:23:46 GMT</pubDate>
   </item>
     </channel>
   </rss>
