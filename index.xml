@@ -6,6 +6,18 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Culture as practice drafting</title>
+    <link>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</link>
+    <guid>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</guid>
+    <description>Writing a section for a paper on research-evaluation, research-culture, research-lm See Culture as Practice Meeting Notes, Culture as Practice textbarf How we evaluate As important as understanding “what” to evaluate (ie., interaction styles, reflection of culturally-embedded preferences) is the que...</description>
+    <pubDate>Thu, 01 May 2025 20:48:40 GMT</pubDate>
+  </item><item>
+    <title>Culture as Practice textbarf</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Culture-as-Practice-textbarf</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Culture-as-Practice-textbarf</guid>
+    <description>textvomit paper-notes As important as understanding &quot;what&quot; to evaluate (ie., interaction styles, reflection of culturally-embedded preferences) is the question of how to evaluate these diverse desiderata.</description>
+    <pubDate>Thu, 01 May 2025 20:29:17 GMT</pubDate>
+  </item><item>
     <title>Interlingua is awesome</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/Interlingua-is-awesome</link>
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Interlingua-is-awesome</guid>
@@ -53,18 +65,6 @@
     <guid>https://notes.mksx.xyz/How-To/Homebrew-sync-to-a-custom-URL-using-quartz</guid>
     <description>This is a simple guide for how I rolled my own rip-off of Obsidian Publish.</description>
     <pubDate>Thu, 24 Apr 2025 23:15:55 GMT</pubDate>
-  </item><item>
-    <title>Papers for subjective reward modeling in GenAI</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Papers-for-subjective-reward-modeling-in-GenAI</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Papers-for-subjective-reward-modeling-in-GenAI</guid>
-    <description>ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation Jiazheng Xu, Xiao Liu, Yuchen Wu, Yuxuan Tong, Qinkai Li, Ming Ding, Jie Tang, Yuxiao Dong Neural Information Processing Systems 2023 open paper page Abstract We present a comprehensive solution to learn and improve ...</description>
-    <pubDate>Thu, 24 Apr 2025 22:00:45 GMT</pubDate>
-  </item><item>
-    <title>Culture as Practice Meeting Notes</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Culture-as-Practice-Meeting-Notes</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Culture-as-Practice-Meeting-Notes</guid>
-    <description>2025-04-24 13:19 Tags: paper-notes research-culture research-lm research-evaluation Transcriptions of assorted points from meetings.</description>
-    <pubDate>Thu, 24 Apr 2025 20:19:54 GMT</pubDate>
   </item>
     </channel>
   </rss>
