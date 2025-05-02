@@ -6,23 +6,29 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>10+ youtube channels</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/10+-youtube-channels</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/10+-youtube-channels</guid>
-    <description>*kind of a meme or a little sus but I still watch Learn about the world, be entertained Anything and everything Tor’s Cabinet of Curiosities hoser Unlearning Economics Trey the Explainer History The Cynical Historian Knowing Better Atun Shei Productions Sean Munger Thinking about the Roman Empire Hi...</description>
-    <pubDate>Fri, 02 May 2025 20:49:23 GMT</pubDate>
-  </item><item>
-    <title>Cultural variation in response scales</title>
-    <link>https://notes.mksx.xyz/02-Document-Notes/Cultural-variation-in-response-scales</link>
-    <guid>https://notes.mksx.xyz/02-Document-Notes/Cultural-variation-in-response-scales</guid>
-    <description>Academic results RESPONSE STYLE AND CROSS-CULTURAL COMPARISONS OF RATING SCALES AMONG EAST ASIAN AND NORTH AMERICAN STUDENTS Responses to fifty-seven 7-point Likert-type scales were analyzed.</description>
-    <pubDate>Fri, 02 May 2025 18:43:40 GMT</pubDate>
+    <title>Newuser command</title>
+    <link>https://notes.mksx.xyz/How-To/Newuser-command</link>
+    <guid>https://notes.mksx.xyz/How-To/Newuser-command</guid>
+    <description>#!/bin/bash if [[ $#--lt-2-| -lt 2 ]]; then echo &quot;add the uname as first arg and ssh key as second&quot; exit fi USERNAME=$1 KEY=$2 # make new user sudo useradd -m $USERNAME USERPATH=/home/$USERNAME echo &quot;Successfully created new user $USERNAME&quot; echo &quot;&quot; echo &quot;$USERNAME&...</description>
+    <pubDate>Fri, 02 May 2025 21:39:16 GMT</pubDate>
   </item><item>
     <title>Culture as practice drafting</title>
     <link>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</link>
     <guid>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</guid>
     <description>Writing a section for a paper on research-evaluation, research-culture, research-lm See Culture as Practice Meeting Notes, Culture as Practice textbarf, Cultural variation in response scales Survey taxonomy Within the class of “global tasks” (can be in English or other languages), we came up with th...</description>
-    <pubDate>Fri, 02 May 2025 06:13:13 GMT</pubDate>
+    <pubDate>Fri, 02 May 2025 21:29:19 GMT</pubDate>
+  </item><item>
+    <title>Cultural variation in response scales</title>
+    <link>https://notes.mksx.xyz/02-Document-Notes/Cultural-variation-in-response-scales</link>
+    <guid>https://notes.mksx.xyz/02-Document-Notes/Cultural-variation-in-response-scales</guid>
+    <description>Academic results RESPONSE STYLE AND CROSS-CULTURAL COMPARISONS OF RATING SCALES AMONG EAST ASIAN AND NORTH AMERICAN STUDENTS Responses to fifty-seven 7-point Likert-type scales were analyzed.</description>
+    <pubDate>Fri, 02 May 2025 21:06:36 GMT</pubDate>
+  </item><item>
+    <title>10+ youtube channels</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/10+-youtube-channels</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/10+-youtube-channels</guid>
+    <description>*kind of a meme or a little sus but I still watch Learn about the world, be entertained Anything and everything Tor’s Cabinet of Curiosities hoser Unlearning Economics Trey the Explainer History The Cynical Historian Knowing Better Atun Shei Productions Sean Munger Thinking about the Roman Empire Hi...</description>
+    <pubDate>Fri, 02 May 2025 20:52:32 GMT</pubDate>
   </item><item>
     <title>Culture as Practice textbarf</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/Culture-as-Practice-textbarf</link>
@@ -59,12 +65,6 @@
     <guid>https://notes.mksx.xyz/09-Language/%E4%B8%AD%E6%96%87-vocab</guid>
     <description>冷笑话 stupid joke 好笑话 一点儿不好笑 一定要 →必ず 扯淡→bullshit.</description>
     <pubDate>Sat, 26 Apr 2025 21:50:07 GMT</pubDate>
-  </item><item>
-    <title>How to &quot;how to&quot; questions in English</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/How-to-%22how-to%22-questions-in-English</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/How-to-%22how-to%22-questions-in-English</guid>
-    <description>Asking a question that starts with “how to” is almost always wrong in English.</description>
-    <pubDate>Fri, 25 Apr 2025 01:52:48 GMT</pubDate>
   </item>
     </channel>
   </rss>
