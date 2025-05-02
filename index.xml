@@ -6,17 +6,23 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Available discoveries are a nonrenewable resource</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Available-discoveries-are-a-nonrenewable-resource</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Available-discoveries-are-a-nonrenewable-resource</guid>
+    <description>Real science like physics has a limited amount of discoveries to be made sitting around Fake science assumes that there’s unlimited discoveries Multiconstraint optimization of benchmarks that are good/dynamic/construct valid (eg., chatbot arena) but NOT plug-and-play vs plug-and-play but not having ...</description>
+    <pubDate>Fri, 02 May 2025 23:13:37 GMT</pubDate>
+  </item><item>
+    <title>It&#039;s not the incentives</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/It's-not-the-incentives</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/It's-not-the-incentives</guid>
+    <description>research-culture complaints blogpost-other my-complaints Insightful blogpost from Tal Yarkoni Argues that it’s cowardly to do something unethical, antisocial, or harmful but then blame the incentive structures that reward it.</description>
+    <pubDate>Fri, 02 May 2025 23:13:21 GMT</pubDate>
+  </item><item>
     <title>Get me off your fucking mailing list</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/Get-me-off-your-fucking-mailing-list</link>
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Get-me-off-your-fucking-mailing-list</guid>
     <description>complaints research-culture Self-explanatory, this is a real article that was published by David Mazieres and Eddie Kohler in the predatory open-access International Journal of Advanced Computer Technology.</description>
     <pubDate>Fri, 02 May 2025 23:11:26 GMT</pubDate>
-  </item><item>
-    <title>It&#039;s not the incentives</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/It's-not-the-incentives</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/It's-not-the-incentives</guid>
-    <description>research-culture complaints blogpost-other my-complaints Insightful blogpost from Tal Yarkoni.</description>
-    <pubDate>Fri, 02 May 2025 23:08:16 GMT</pubDate>
   </item><item>
     <title>Naming the encoder and decoder elements of LMs</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/Naming-the-encoder-and-decoder-elements-of-LMs</link>
@@ -59,12 +65,6 @@
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Interlingua-is-awesome</guid>
     <description>Interlingua was designed to be maximally comprehensible to (Western) Europeans by being heavily based on English + the Romance languages (with secondary influence from German and Russian), see the concept of “Standard Average European languages”.</description>
     <pubDate>Thu, 01 May 2025 05:59:42 GMT</pubDate>
-  </item><item>
-    <title>You&#039;re using the wrong perplexity</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/You're-using-the-wrong-perplexity</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/You're-using-the-wrong-perplexity</guid>
-    <description>blog-idea blogpost-notes Draft en.wikipedia.org/wiki/Perplexity TL;DR: “perplexity” the measure of LM fit and “perplexity” the model-based measure of information content of a corpus are slightly (but importantly！）different.</description>
-    <pubDate>Wed, 30 Apr 2025 23:33:39 GMT</pubDate>
   </item>
     </channel>
   </rss>
