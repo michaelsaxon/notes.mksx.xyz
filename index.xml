@@ -6,6 +6,18 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Randomness, Not Representation</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Randomness,-Not-Representation</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Randomness,-Not-Representation</guid>
+    <description>paper-notes research-culture research-evaluation [Semantic Reader].</description>
+    <pubDate>Sat, 03 May 2025 01:30:01 GMT</pubDate>
+  </item><item>
+    <title>Cultural variation in response scales</title>
+    <link>https://notes.mksx.xyz/02-Document-Notes/Cultural-variation-in-response-scales</link>
+    <guid>https://notes.mksx.xyz/02-Document-Notes/Cultural-variation-in-response-scales</guid>
+    <description>paper-notes research-extradisciplinary research-culture Academic results RESPONSE STYLE AND CROSS-CULTURAL COMPARISONS OF RATING SCALES AMONG EAST ASIAN AND NORTH AMERICAN STUDENTS Responses to fifty-seven 7-point Likert-type scales were analyzed.</description>
+    <pubDate>Sat, 03 May 2025 01:29:32 GMT</pubDate>
+  </item><item>
     <title>Culture as practice drafting</title>
     <link>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</link>
     <guid>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</guid>
@@ -23,12 +35,6 @@
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/ChatGPT-doesn't-trust-Chargers-fans</guid>
     <description>ChatGPT Doesn’t Trust Chargers Fans from EMNLP 2024 They assess guardrail sensitivity, the overall tendency of the ChatGPT guardrail to refuse requests from some prompt topic across a bunch of different topics and demographic characteristics.</description>
     <pubDate>Sat, 03 May 2025 01:20:50 GMT</pubDate>
-  </item><item>
-    <title>Cultural variation in response scales</title>
-    <link>https://notes.mksx.xyz/02-Document-Notes/Cultural-variation-in-response-scales</link>
-    <guid>https://notes.mksx.xyz/02-Document-Notes/Cultural-variation-in-response-scales</guid>
-    <description>Academic results RESPONSE STYLE AND CROSS-CULTURAL COMPARISONS OF RATING SCALES AMONG EAST ASIAN AND NORTH AMERICAN STUDENTS Responses to fifty-seven 7-point Likert-type scales were analyzed.</description>
-    <pubDate>Fri, 02 May 2025 23:30:46 GMT</pubDate>
   </item><item>
     <title>It&#039;s not the incentives</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/It's-not-the-incentives</link>
@@ -59,12 +65,6 @@
     <guid>https://notes.mksx.xyz/How-To/Newuser-command</guid>
     <description>#!/bin/bash if [[ $#--lt-2-| -lt 2 ]]; then echo &quot;add the uname as first arg and ssh key as second&quot; exit fi USERNAME=$1 KEY=$2 # make new user sudo useradd -m $USERNAME USERPATH=/home/$USERNAME echo &quot;Successfully created new user $USERNAME&quot; echo &quot;&quot; echo &quot;$USERNAME&...</description>
     <pubDate>Fri, 02 May 2025 21:39:16 GMT</pubDate>
-  </item><item>
-    <title>10+ youtube channels</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/10+-youtube-channels</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/10+-youtube-channels</guid>
-    <description>*kind of a meme or a little sus but I still watch Learn about the world, be entertained Anything and everything Tor’s Cabinet of Curiosities hoser Unlearning Economics Trey the Explainer History The Cynical Historian Knowing Better Atun Shei Productions Sean Munger Thinking about the Roman Empire Hi...</description>
-    <pubDate>Fri, 02 May 2025 20:52:32 GMT</pubDate>
   </item>
     </channel>
   </rss>
