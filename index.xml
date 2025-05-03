@@ -9,8 +9,14 @@
     <title>Cultural Conditioning or Placebo</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/Cultural-Conditioning-or-Placebo</link>
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Cultural-Conditioning-or-Placebo</guid>
-    <description>paper-notes research-culture EMNLP 2024 from Monojit Choudhury and other MSRI people They condition prompts on “cultural and non-cultural cues” in order to test whether.</description>
-    <pubDate>Sat, 03 May 2025 00:11:48 GMT</pubDate>
+    <description>paper-notes research-culture EMNLP 2024 from Monojit Choudhury and other MSRI people They condition prompts on “cultural and non-cultural cues” in order to test whether one’s variation is stronger than the others.</description>
+    <pubDate>Sat, 03 May 2025 01:14:20 GMT</pubDate>
+  </item><item>
+    <title>Culture as practice drafting</title>
+    <link>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</link>
+    <guid>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</guid>
+    <description>Writing a section for a paper on research-evaluation, research-culture, research-lm See Culture as Practice Meeting Notes, Culture as Practice textbarf, Cultural variation in response scales Survey taxonomy Within the class of “global tasks” (can be in English or other languages), we came up with th...</description>
+    <pubDate>Sat, 03 May 2025 00:54:58 GMT</pubDate>
   </item><item>
     <title>Cultural variation in response scales</title>
     <link>https://notes.mksx.xyz/02-Document-Notes/Cultural-variation-in-response-scales</link>
@@ -47,12 +53,6 @@
     <guid>https://notes.mksx.xyz/How-To/Newuser-command</guid>
     <description>#!/bin/bash if [[ $#--lt-2-| -lt 2 ]]; then echo &quot;add the uname as first arg and ssh key as second&quot; exit fi USERNAME=$1 KEY=$2 # make new user sudo useradd -m $USERNAME USERPATH=/home/$USERNAME echo &quot;Successfully created new user $USERNAME&quot; echo &quot;&quot; echo &quot;$USERNAME&...</description>
     <pubDate>Fri, 02 May 2025 21:39:16 GMT</pubDate>
-  </item><item>
-    <title>Culture as practice drafting</title>
-    <link>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</link>
-    <guid>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</guid>
-    <description>Writing a section for a paper on research-evaluation, research-culture, research-lm See Culture as Practice Meeting Notes, Culture as Practice textbarf, Cultural variation in response scales Survey taxonomy Within the class of “global tasks” (can be in English or other languages), we came up with th...</description>
-    <pubDate>Fri, 02 May 2025 21:29:19 GMT</pubDate>
   </item><item>
     <title>10+ youtube channels</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/10+-youtube-channels</link>
