@@ -6,6 +6,12 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Master list of todos for PECO EACL camready</title>
+    <link>https://notes.mksx.xyz/02-Document-Notes/Master-list-of-todos-for-PECO-EACL-camready</link>
+    <guid>https://notes.mksx.xyz/02-Document-Notes/Master-list-of-todos-for-PECO-EACL-camready</guid>
+    <description>2023-01-07 22:34 Tags: todos Debug notes SICK, CF : too many values to unpack SICK fixed X, MdbA: no pretrained model (training in progress) X on andrew MdbA on zion OC: no layer named dense in last final layer The one model you don’t use lastdense for (classifier doesn’t contain a dense) s2only, la...</description>
+    <pubDate>Mon, 05 May 2025 21:56:43 GMT</pubDate>
+  </item><item>
     <title>Culture as practice drafting</title>
     <link>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</link>
     <guid>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</guid>
@@ -59,12 +65,6 @@
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Available-discoveries-are-a-nonrenewable-resource</guid>
     <description>Real science like physics has a limited amount of discoveries to be made sitting around Fake science assumes that there’s unlimited discoveries Multiconstraint optimization of benchmarks that are good/dynamic/construct valid (eg., chatbot arena) but NOT plug-and-play vs plug-and-play but not having ...</description>
     <pubDate>Fri, 02 May 2025 23:13:37 GMT</pubDate>
-  </item><item>
-    <title>Get me off your fucking mailing list</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Get-me-off-your-fucking-mailing-list</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Get-me-off-your-fucking-mailing-list</guid>
-    <description>complaints research-culture Self-explanatory, this is a real article that was published by David Mazieres and Eddie Kohler in the predatory open-access International Journal of Advanced Computer Technology.</description>
-    <pubDate>Fri, 02 May 2025 23:11:26 GMT</pubDate>
   </item>
     </channel>
   </rss>
