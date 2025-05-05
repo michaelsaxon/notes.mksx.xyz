@@ -6,11 +6,17 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Randomness, Not Representation</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Randomness,-Not-Representation</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Randomness,-Not-Representation</guid>
-    <description>Randomness, Not Representation: The unreliability of evaluating cultural alignment in LLMs Ariba Khan, Stephen Casper, Dylan Hadfield-Menell paper-notes research-culture research-evaluation [Semantic Reader] Related work is strong for mining Cultural alignment in LMs LLMs tend to reflect values from...</description>
-    <pubDate>Mon, 05 May 2025 23:20:33 GMT</pubDate>
+    <title>Randomness, Not Representation_ The Unreliability of Evaluating Cultural Alignment in LLMs</title>
+    <link>https://notes.mksx.xyz/References/Randomness,-Not-Representation_-The-Unreliability-of-Evaluating-Cultural-Alignment-in-LLMs</link>
+    <guid>https://notes.mksx.xyz/References/Randomness,-Not-Representation_-The-Unreliability-of-Evaluating-Cultural-Alignment-in-LLMs</guid>
+    <description>Randomness, Not Representation: The Unreliability of Evaluating Cultural Alignment in LLMs Ariba Khan, Stephen Casper, Dylan Hadfield-Menell 2025 In Zotero: khanRandomnessNotRepresentation2025 Online: url tags: paper-notes research-culture research-evaluation links: Notes Related work is strong for ...</description>
+    <pubDate>Mon, 05 May 2025 23:27:53 GMT</pubDate>
+  </item><item>
+    <title>The Ghost in the Machine has an American accent_ Value conflict in GPT-3.</title>
+    <link>https://notes.mksx.xyz/References/The-Ghost-in-the-Machine-has-an-American-accent_-Value-conflict-in-GPT-3.</link>
+    <guid>https://notes.mksx.xyz/References/The-Ghost-in-the-Machine-has-an-American-accent_-Value-conflict-in-GPT-3.</guid>
+    <description>The Ghost in the Machine has an American accent: Value conflict in GPT-3.</description>
+    <pubDate>Mon, 05 May 2025 23:26:26 GMT</pubDate>
   </item><item>
     <title>Thick Evaluation (Qadri et al 2018-2025)</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/Thick-Evaluation-(Qadri-et-al-2018-2025)</link>
@@ -59,12 +65,6 @@
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/ChatGPT-doesn't-trust-Chargers-fans</guid>
     <description>ChatGPT Doesn’t Trust Chargers Fans from EMNLP 2024 They assess guardrail sensitivity, the overall tendency of the ChatGPT guardrail to refuse requests from some prompt topic across a bunch of different topics and demographic characteristics.</description>
     <pubDate>Sat, 03 May 2025 01:20:50 GMT</pubDate>
-  </item><item>
-    <title>It&#039;s not the incentives</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/It's-not-the-incentives</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/It's-not-the-incentives</guid>
-    <description>research-culture complaints blogpost-other Insightful blogpost from Tal Yarkoni Argues that it’s cowardly to do something unethical, antisocial, or harmful but then blame the incentive structures that reward it.</description>
-    <pubDate>Fri, 02 May 2025 23:24:58 GMT</pubDate>
   </item>
     </channel>
   </rss>
