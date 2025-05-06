@@ -6,6 +6,18 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Research is not a jack in the box</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Research-is-not-a-jack-in-the-box</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Research-is-not-a-jack-in-the-box</guid>
+    <description>blog-idea Talking about the “crank turning” model of research and the problems that this attitude will cause in young researchers.</description>
+    <pubDate>Tue, 06 May 2025 06:27:47 GMT</pubDate>
+  </item><item>
+    <title>The Ghost in the Machine has an American accent_ Value conflict in GPT-3.</title>
+    <link>https://notes.mksx.xyz/References/The-Ghost-in-the-Machine-has-an-American-accent_-Value-conflict-in-GPT-3.</link>
+    <guid>https://notes.mksx.xyz/References/The-Ghost-in-the-Machine-has-an-American-accent_-Value-conflict-in-GPT-3.</guid>
+    <description>The Ghost in the Machine has an American accent: Value conflict in GPT-3.</description>
+    <pubDate>Tue, 06 May 2025 06:26:28 GMT</pubDate>
+  </item><item>
     <title>Randomness, Not Representation_ The Unreliability of Evaluating Cultural Alignment in LLMs</title>
     <link>https://notes.mksx.xyz/References/Randomness,-Not-Representation_-The-Unreliability-of-Evaluating-Cultural-Alignment-in-LLMs</link>
     <guid>https://notes.mksx.xyz/References/Randomness,-Not-Representation_-The-Unreliability-of-Evaluating-Cultural-Alignment-in-LLMs</guid>
@@ -30,41 +42,29 @@
     <description>Writing a section for a paper on research-evaluation, research-culture, research-lm See Culture as Practice Meeting Notes, Culture as Practice textbarf Survey taxonomy Within the class of “global tasks” (can be in English or other languages), we came up with this way to divide up task exemplars: Imp...</description>
     <pubDate>Tue, 06 May 2025 00:21:20 GMT</pubDate>
   </item><item>
-    <title>The Ghost in the Machine has an American accent_ Value conflict in GPT-3.</title>
-    <link>https://notes.mksx.xyz/References/The-Ghost-in-the-Machine-has-an-American-accent_-Value-conflict-in-GPT-3.</link>
-    <guid>https://notes.mksx.xyz/References/The-Ghost-in-the-Machine-has-an-American-accent_-Value-conflict-in-GPT-3.</guid>
-    <description>The Ghost in the Machine has an American accent: Value conflict in GPT-3.</description>
-    <pubDate>Tue, 06 May 2025 00:20:06 GMT</pubDate>
-  </item><item>
-    <title>Untitled 2</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Untitled-2</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Untitled-2</guid>
-    <description></description>
-    <pubDate>Tue, 06 May 2025 00:17:01 GMT</pubDate>
-  </item><item>
-    <title>Untitled 1</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Untitled-1</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Untitled-1</guid>
-    <description></description>
-    <pubDate>Tue, 06 May 2025 00:16:51 GMT</pubDate>
-  </item><item>
     <title>Wtf is a persona?!</title>
     <link>https://notes.mksx.xyz/02-Document-Notes/Wtf-is-a-persona!</link>
     <guid>https://notes.mksx.xyz/02-Document-Notes/Wtf-is-a-persona!</guid>
     <description>Sometimes “persona” in LMs refers to an output persona, ie the thing that describes the human-like behavior the LM is supposed to simulate Other times it refers to input personas, ie the data that models the kind of users the LM is interacting with (in lieu of fully real interactions with the model ...</description>
     <pubDate>Tue, 06 May 2025 00:16:35 GMT</pubDate>
   </item><item>
-    <title>Untitled</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Untitled</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Untitled</guid>
-    <description></description>
-    <pubDate>Tue, 06 May 2025 00:09:21 GMT</pubDate>
-  </item><item>
     <title>The Case for _Thick Evaluations_ of Cultural Representation in AI</title>
     <link>https://notes.mksx.xyz/References/The-Case-for-_Thick-Evaluations_-of-Cultural-Representation-in-AI</link>
     <guid>https://notes.mksx.xyz/References/The-Case-for-_Thick-Evaluations_-of-Cultural-Representation-in-AI</guid>
     <description>The Case for “Thick Evaluations” of Cultural Representation in AI Rida Qadri, Mark Diaz, Ding Wang, Michael Madaio 2025 In Zotero: qadriCaseThickEvaluations2025 Online: url tags: research-image-generation, research-evaluation, research-culture links: Culture as practice drafting Notes What is Thick ...</description>
     <pubDate>Mon, 05 May 2025 23:32:29 GMT</pubDate>
+  </item><item>
+    <title>Scaling Laws Do Not Scale</title>
+    <link>https://notes.mksx.xyz/References/Scaling-Laws-Do-Not-Scale</link>
+    <guid>https://notes.mksx.xyz/References/Scaling-Laws-Do-Not-Scale</guid>
+    <description>Scaling Laws Do Not Scale Fernando Diaz, Michael Madaio 2024 In Zotero: diazScalingLawsNot2024 Online: url tags: research-culture research-evaluation links: Culture as practice drafting Notes The paper is a discussion about the limitations of scaling laws wrt cultural values, languages, and sub-grou...</description>
+    <pubDate>Mon, 05 May 2025 23:32:23 GMT</pubDate>
+  </item><item>
+    <title>Adaptation Stage</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Adaptation-Stage</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Adaptation-Stage</guid>
+    <description>c Adaptation Stage 2022-04-22 22:03 Tags: language-model pretraining Adaptation stage takes place following after pre-training, but with other objectives, to make an MLM model better able of performing prompted text generation tasks.</description>
+    <pubDate>Mon, 05 May 2025 23:31:36 GMT</pubDate>
   </item>
     </channel>
   </rss>
