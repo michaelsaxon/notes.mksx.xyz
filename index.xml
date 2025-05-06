@@ -6,65 +6,65 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Randomness, Not Representation_ The Unreliability of Evaluating Cultural Alignment in LLMs</title>
-    <link>https://notes.mksx.xyz/References/Randomness,-Not-Representation_-The-Unreliability-of-Evaluating-Cultural-Alignment-in-LLMs</link>
-    <guid>https://notes.mksx.xyz/References/Randomness,-Not-Representation_-The-Unreliability-of-Evaluating-Cultural-Alignment-in-LLMs</guid>
-    <description>Randomness, Not Representation: The Unreliability of Evaluating Cultural Alignment in LLMs Ariba Khan, Stephen Casper, Dylan Hadfield-Menell 2025 In Zotero: khanRandomnessNotRepresentation2025 Online: url tags: paper-notes research-culture research-evaluation links: Notes Related work is strong for ...</description>
-    <pubDate>Mon, 05 May 2025 23:27:53 GMT</pubDate>
-  </item><item>
-    <title>The Ghost in the Machine has an American accent_ Value conflict in GPT-3.</title>
-    <link>https://notes.mksx.xyz/References/The-Ghost-in-the-Machine-has-an-American-accent_-Value-conflict-in-GPT-3.</link>
-    <guid>https://notes.mksx.xyz/References/The-Ghost-in-the-Machine-has-an-American-accent_-Value-conflict-in-GPT-3.</guid>
-    <description>The Ghost in the Machine has an American accent: Value conflict in GPT-3.</description>
-    <pubDate>Mon, 05 May 2025 23:26:26 GMT</pubDate>
-  </item><item>
-    <title>Thick Evaluation (Qadri et al 2018-2025)</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Thick-Evaluation-(Qadri-et-al-2018-2025)</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Thick-Evaluation-(Qadri-et-al-2018-2025)</guid>
-    <description>Link: arxiv.org/pdf/2503.19075 From FAccT, continually updated Focused on research-image-generation, research-evaluation, research-culture What is Thick Evaluation Defined as “more granular, situated, and discursive” and “steeped in [a community’s own understanding] of representation” Taken from Gil...</description>
-    <pubDate>Mon, 05 May 2025 22:59:29 GMT</pubDate>
+    <title>Investigating Cultural Alignment of Large Language Models</title>
+    <link>https://notes.mksx.xyz/References/Investigating-Cultural-Alignment-of-Large-Language-Models</link>
+    <guid>https://notes.mksx.xyz/References/Investigating-Cultural-Alignment-of-Large-Language-Models</guid>
+    <description>Investigating Cultural Alignment of Large Language Models Badr AlKhamissi, Muhammad ElNokrashy, Mai AlKhamissi, Mona Diab 2024 In Zotero: alkhamissiInvestigatingCulturalAlignment2024 Online: url tags: research-culture research-evaluation research-lm links: Cited by Randomness, Not Representation_ Th...</description>
+    <pubDate>Tue, 06 May 2025 00:28:19 GMT</pubDate>
   </item><item>
     <title>Culture as practice drafting</title>
     <link>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</link>
     <guid>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</guid>
     <description>Writing a section for a paper on research-evaluation, research-culture, research-lm See Culture as Practice Meeting Notes, Culture as Practice textbarf Survey taxonomy Within the class of “global tasks” (can be in English or other languages), we came up with this way to divide up task exemplars: Imp...</description>
-    <pubDate>Mon, 05 May 2025 22:26:24 GMT</pubDate>
+    <pubDate>Tue, 06 May 2025 00:21:20 GMT</pubDate>
   </item><item>
-    <title>Master list of todos for PECO EACL camready</title>
-    <link>https://notes.mksx.xyz/02-Document-Notes/Master-list-of-todos-for-PECO-EACL-camready</link>
-    <guid>https://notes.mksx.xyz/02-Document-Notes/Master-list-of-todos-for-PECO-EACL-camready</guid>
-    <description>2023-01-07 22:34 Tags: todos Debug notes SICK, CF : too many values to unpack SICK fixed X, MdbA: no pretrained model (training in progress) X on andrew MdbA on zion OC: no layer named dense in last final layer The one model you don’t use lastdense for (classifier doesn’t contain a dense) s2only, la...</description>
-    <pubDate>Mon, 05 May 2025 21:56:43 GMT</pubDate>
+    <title>The Ghost in the Machine has an American accent_ Value conflict in GPT-3.</title>
+    <link>https://notes.mksx.xyz/References/The-Ghost-in-the-Machine-has-an-American-accent_-Value-conflict-in-GPT-3.</link>
+    <guid>https://notes.mksx.xyz/References/The-Ghost-in-the-Machine-has-an-American-accent_-Value-conflict-in-GPT-3.</guid>
+    <description>The Ghost in the Machine has an American accent: Value conflict in GPT-3.</description>
+    <pubDate>Tue, 06 May 2025 00:20:06 GMT</pubDate>
+  </item><item>
+    <title>Untitled 2</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Untitled-2</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Untitled-2</guid>
+    <description></description>
+    <pubDate>Tue, 06 May 2025 00:17:01 GMT</pubDate>
+  </item><item>
+    <title>Untitled 1</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Untitled-1</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Untitled-1</guid>
+    <description></description>
+    <pubDate>Tue, 06 May 2025 00:16:51 GMT</pubDate>
+  </item><item>
+    <title>Wtf is a persona?!</title>
+    <link>https://notes.mksx.xyz/02-Document-Notes/Wtf-is-a-persona!</link>
+    <guid>https://notes.mksx.xyz/02-Document-Notes/Wtf-is-a-persona!</guid>
+    <description>Sometimes “persona” in LMs refers to an output persona, ie the thing that describes the human-like behavior the LM is supposed to simulate Other times it refers to input personas, ie the data that models the kind of users the LM is interacting with (in lieu of fully real interactions with the model ...</description>
+    <pubDate>Tue, 06 May 2025 00:16:35 GMT</pubDate>
+  </item><item>
+    <title>Randomness, Not Representation_ The Unreliability of Evaluating Cultural Alignment in LLMs</title>
+    <link>https://notes.mksx.xyz/References/Randomness,-Not-Representation_-The-Unreliability-of-Evaluating-Cultural-Alignment-in-LLMs</link>
+    <guid>https://notes.mksx.xyz/References/Randomness,-Not-Representation_-The-Unreliability-of-Evaluating-Cultural-Alignment-in-LLMs</guid>
+    <description>Randomness, Not Representation: The Unreliability of Evaluating Cultural Alignment in LLMs Ariba Khan, Stephen Casper, Dylan Hadfield-Menell 2025 In Zotero: khanRandomnessNotRepresentation2025 Online: url tags: paper-notes research-culture research-evaluation links: Culture as practice drafting Note...</description>
+    <pubDate>Tue, 06 May 2025 00:11:33 GMT</pubDate>
+  </item><item>
+    <title>Untitled</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Untitled</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Untitled</guid>
+    <description></description>
+    <pubDate>Tue, 06 May 2025 00:09:21 GMT</pubDate>
+  </item><item>
+    <title>The Case for _Thick Evaluations_ of Cultural Representation in AI</title>
+    <link>https://notes.mksx.xyz/References/The-Case-for-_Thick-Evaluations_-of-Cultural-Representation-in-AI</link>
+    <guid>https://notes.mksx.xyz/References/The-Case-for-_Thick-Evaluations_-of-Cultural-Representation-in-AI</guid>
+    <description>The Case for “Thick Evaluations” of Cultural Representation in AI Rida Qadri, Mark Diaz, Ding Wang, Michael Madaio 2025 In Zotero: qadriCaseThickEvaluations2025 Online: url tags: research-image-generation, research-evaluation, research-culture links: Culture as practice drafting Notes What is Thick ...</description>
+    <pubDate>Mon, 05 May 2025 23:32:29 GMT</pubDate>
   </item><item>
     <title>Scaling Laws Do Not Scale</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Scaling-Laws-Do-Not-Scale</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Scaling-Laws-Do-Not-Scale</guid>
-    <description>Fernando Diaz and Michael Madai [pdf link] The paper is a discussion about the limitations of scaling laws wrt cultural values, languages, and sub-groups.</description>
-    <pubDate>Mon, 05 May 2025 01:46:32 GMT</pubDate>
-  </item><item>
-    <title>index</title>
-    <link>https://notes.mksx.xyz/Metrolopedia/</link>
-    <guid>https://notes.mksx.xyz/Metrolopedia/</guid>
-    <description>This section will eventually be an attempted comprehensive collection of learned/objective metrics with links between similarities and common mathematical concepts.</description>
-    <pubDate>Mon, 05 May 2025 00:15:36 GMT</pubDate>
-  </item><item>
-    <title>Cultural variation in response scales</title>
-    <link>https://notes.mksx.xyz/02-Document-Notes/Cultural-variation-in-response-scales</link>
-    <guid>https://notes.mksx.xyz/02-Document-Notes/Cultural-variation-in-response-scales</guid>
-    <description>paper-notes research-extradisciplinary research-culture Academic results RESPONSE STYLE AND CROSS-CULTURAL COMPARISONS OF RATING SCALES AMONG EAST ASIAN AND NORTH AMERICAN STUDENTS Responses to fifty-seven 7-point Likert-type scales were analyzed.</description>
-    <pubDate>Sat, 03 May 2025 01:29:32 GMT</pubDate>
-  </item><item>
-    <title>Cultural Conditioning or Placebo</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Cultural-Conditioning-or-Placebo</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Cultural-Conditioning-or-Placebo</guid>
-    <description>paper-notes research-culture EMNLP 2024 from Monojit Choudhury and other MSRI people They condition prompts on “cultural and non-cultural cues” in order to test whether one’s variation is stronger than the others.</description>
-    <pubDate>Sat, 03 May 2025 01:22:21 GMT</pubDate>
-  </item><item>
-    <title>ChatGPT doesn&#039;t trust Chargers fans</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/ChatGPT-doesn't-trust-Chargers-fans</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/ChatGPT-doesn't-trust-Chargers-fans</guid>
-    <description>ChatGPT Doesn’t Trust Chargers Fans from EMNLP 2024 They assess guardrail sensitivity, the overall tendency of the ChatGPT guardrail to refuse requests from some prompt topic across a bunch of different topics and demographic characteristics.</description>
-    <pubDate>Sat, 03 May 2025 01:20:50 GMT</pubDate>
+    <link>https://notes.mksx.xyz/References/Scaling-Laws-Do-Not-Scale</link>
+    <guid>https://notes.mksx.xyz/References/Scaling-Laws-Do-Not-Scale</guid>
+    <description>Scaling Laws Do Not Scale Fernando Diaz, Michael Madaio 2024 In Zotero: diazScalingLawsNot2024 Online: url tags: research-culture research-evaluation links: Culture as practice drafting Notes The paper is a discussion about the limitations of scaling laws wrt cultural values, languages, and sub-grou...</description>
+    <pubDate>Mon, 05 May 2025 23:32:23 GMT</pubDate>
   </item>
     </channel>
   </rss>
