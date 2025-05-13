@@ -6,6 +6,24 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Attributes for text evaluation</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Attributes-for-text-evaluation</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Attributes-for-text-evaluation</guid>
+    <description>KPEval: Towards Fine-Grained Semantic-Based Keyphrase Evaluation Discusses how keyphrase extraction and generation usually only looks at exact match or some analogue.</description>
+    <pubDate>Tue, 13 May 2025 00:16:35 GMT</pubDate>
+  </item><item>
+    <title>Culture as practice drafting</title>
+    <link>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</link>
+    <guid>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</guid>
+    <description>Writing a section for a paper on research-evaluation, research-culture, research-lm See Culture as Practice Meeting Notes, Culture as Practice textbarf Survey taxonomy Within the class of “global tasks” (can be in English or other languages), we came up with this way to divide up task exemplars: Imp...</description>
+    <pubDate>Tue, 13 May 2025 00:07:47 GMT</pubDate>
+  </item><item>
+    <title>Untitled</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Untitled</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Untitled</guid>
+    <description></description>
+    <pubDate>Tue, 13 May 2025 00:03:58 GMT</pubDate>
+  </item><item>
     <title>In the beginning there was the command line</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/In-the-beginning-there-was-the-command-line</link>
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/In-the-beginning-there-was-the-command-line</guid>
@@ -17,12 +35,6 @@
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Mark-I-Fire-Control-Computer</guid>
     <description>Excerpted from Wikipedia bootleg The Mark 1, and later the Mark 1A, Fire Control Computer was a component of the Mark 37 Gun Fire Control System deployed by the United States Navy during World War II and up to 1991 and possibly later.</description>
     <pubDate>Mon, 12 May 2025 20:04:18 GMT</pubDate>
-  </item><item>
-    <title>Culture as practice drafting</title>
-    <link>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</link>
-    <guid>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</guid>
-    <description>Writing a section for a paper on research-evaluation, research-culture, research-lm See Culture as Practice Meeting Notes, Culture as Practice textbarf Survey taxonomy Within the class of “global tasks” (can be in English or other languages), we came up with this way to divide up task exemplars: Imp...</description>
-    <pubDate>Thu, 08 May 2025 23:37:22 GMT</pubDate>
   </item><item>
     <title>To read</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/To-read</link>
@@ -53,18 +65,6 @@
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Michael-Lore</guid>
     <description>William’s academic family tree sites.cs.ucsb.edu/~william/misc.html Includes the claim that our academic genealogy includes James Clerk Maxwell.</description>
     <pubDate>Tue, 06 May 2025 07:10:47 GMT</pubDate>
-  </item><item>
-    <title>10+ youtube channels</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/10+-youtube-channels</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/10+-youtube-channels</guid>
-    <description>*kind of a meme or a little sus but I still watch Learn about the world, be entertained Anything and everything Tor’s Cabinet of Curiosities hoser Unlearning Economics Trey the Explainer History The Cynical Historian Knowing Better Atun Shei Productions Sean Munger Thinking about the Roman Empire Hi...</description>
-    <pubDate>Tue, 06 May 2025 07:04:43 GMT</pubDate>
-  </item><item>
-    <title>ChatGPT Doesn`t Trust Chargers Fans_ Guardrail Sensitivity in Context</title>
-    <link>https://notes.mksx.xyz/References/ChatGPT-Doesn%60t-Trust-Chargers-Fans_-Guardrail-Sensitivity-in-Context</link>
-    <guid>https://notes.mksx.xyz/References/ChatGPT-Doesn%60t-Trust-Chargers-Fans_-Guardrail-Sensitivity-in-Context</guid>
-    <description>ChatGPT Doesn’t Trust Chargers Fans: Guardrail Sensitivity in Context Victoria R Li, Yida Chen, Naomi Saphra 2024 In Zotero: [liChatGPTDoesntTrust2024](zotero://select/items/@liChatGPTDoesntTrust2024) Online: url tags: research-lm research-evaluation links: Discussed wrt Notes ChatGPT Doesn’t Trust ...</description>
-    <pubDate>Tue, 06 May 2025 06:40:03 GMT</pubDate>
   </item>
     </channel>
   </rss>
