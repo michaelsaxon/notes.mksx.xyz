@@ -10,7 +10,19 @@
     <link>https://notes.mksx.xyz/References/Bias-in-Language-Models_-Beyond-Trick-Tests-and-Toward-RUTEd-Evaluation</link>
     <guid>https://notes.mksx.xyz/References/Bias-in-Language-Models_-Beyond-Trick-Tests-and-Toward-RUTEd-Evaluation</guid>
     <description>Bias in Language Models: Beyond Trick Tests and Toward RUTEd Evaluation Kristian Lum, Jacy Reese Anthis, Kevin Robinson, Chirag Nagpal, Alexander D’Amour 2025 In Zotero: lum2025bias Online: url tags: research-evaluation research-lm research-bias links: Notes RUTE = Realistic Use and Tangible Effects...</description>
-    <pubDate>Wed, 14 May 2025 00:11:42 GMT</pubDate>
+    <pubDate>Wed, 14 May 2025 23:57:03 GMT</pubDate>
+  </item><item>
+    <title>Wtf is a persona?!</title>
+    <link>https://notes.mksx.xyz/02-Document-Notes/Wtf-is-a-persona!</link>
+    <guid>https://notes.mksx.xyz/02-Document-Notes/Wtf-is-a-persona!</guid>
+    <description>Sometimes “persona” in LMs refers to an output persona, ie the thing that describes the human-like behavior the LM is supposed to simulate Other times it refers to input personas, ie the data that models the kind of users the LM is interacting with (in lieu of fully real interactions with the model ...</description>
+    <pubDate>Wed, 14 May 2025 23:56:58 GMT</pubDate>
+  </item><item>
+    <title>How to embellish honestly (advice for phd apps)</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/How-to-embellish-honestly-(advice-for-phd-apps)</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/How-to-embellish-honestly-(advice-for-phd-apps)</guid>
+    <description>blog-idea I notice a lot of people posting these long-ass project names in their resumes when they don’t have published research experience but need to convey that they’re familiar with a project There is a style of recruiter-targeted resume embellishment that is effective.</description>
+    <pubDate>Wed, 14 May 2025 23:27:32 GMT</pubDate>
   </item><item>
     <title>Culture as practice drafting</title>
     <link>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</link>
@@ -53,18 +65,6 @@
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Research-is-not-a-jack-in-the-box</guid>
     <description>blog-idea Talking about the “crank turning” model of research and the problems that this attitude will cause in young researchers.</description>
     <pubDate>Tue, 06 May 2025 20:18:41 GMT</pubDate>
-  </item><item>
-    <title>Cultural Conditioning or Placebo_ On the Effectiveness of Socio-Demographic Prompting</title>
-    <link>https://notes.mksx.xyz/References/Cultural-Conditioning-or-Placebo_-On-the-Effectiveness-of-Socio-Demographic-Prompting</link>
-    <guid>https://notes.mksx.xyz/References/Cultural-Conditioning-or-Placebo_-On-the-Effectiveness-of-Socio-Demographic-Prompting</guid>
-    <description>Cultural Conditioning or Placebo? On the Effectiveness of Socio-Demographic Prompting Sagnik Mukherjee, Muhammad Farid Adilazuarda, Sunayana Sitaram, Kalika Bali, Alham Fikri Aji, Monojit Choudhury 2024 In Zotero: mukherjeeCulturalConditioningPlacebo2024 Online: url tags: #paper-notes research-cultu...</description>
-    <pubDate>Tue, 06 May 2025 18:30:58 GMT</pubDate>
-  </item><item>
-    <title>The Ghost in the Machine has an American accent_ Value conflict in GPT-3.</title>
-    <link>https://notes.mksx.xyz/References/The-Ghost-in-the-Machine-has-an-American-accent_-Value-conflict-in-GPT-3.</link>
-    <guid>https://notes.mksx.xyz/References/The-Ghost-in-the-Machine-has-an-American-accent_-Value-conflict-in-GPT-3.</guid>
-    <description>The Ghost in the Machine has an American accent: Value conflict in GPT-3.</description>
-    <pubDate>Tue, 06 May 2025 07:53:36 GMT</pubDate>
   </item>
     </channel>
   </rss>
