@@ -6,65 +6,65 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Bias in Language Models_ Beyond Trick Tests and Toward RUTEd Evaluation</title>
-    <link>https://notes.mksx.xyz/References/Bias-in-Language-Models_-Beyond-Trick-Tests-and-Toward-RUTEd-Evaluation</link>
-    <guid>https://notes.mksx.xyz/References/Bias-in-Language-Models_-Beyond-Trick-Tests-and-Toward-RUTEd-Evaluation</guid>
-    <description>Bias in Language Models: Beyond Trick Tests and Toward RUTEd Evaluation Kristian Lum, Jacy Reese Anthis, Kevin Robinson, Chirag Nagpal, Alexander D’Amour 2025 In Zotero: lum2025bias Online: url tags: research-evaluation research-lm research-bias links: Notes RUTE = Realistic Use and Tangible Effects...</description>
-    <pubDate>Thu, 15 May 2025 01:50:22 GMT</pubDate>
-  </item><item>
-    <title>Wtf is a persona?!</title>
-    <link>https://notes.mksx.xyz/02-Document-Notes/Wtf-is-a-persona!</link>
-    <guid>https://notes.mksx.xyz/02-Document-Notes/Wtf-is-a-persona!</guid>
-    <description>Sometimes “persona” in LMs refers to an output persona, ie the thing that describes the human-like behavior the LM is supposed to simulate Other times it refers to input personas, ie the data that models the kind of users the LM is interacting with (in lieu of fully real interactions with the model ...</description>
-    <pubDate>Wed, 14 May 2025 23:56:58 GMT</pubDate>
-  </item><item>
-    <title>How to embellish honestly (advice for phd apps)</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/How-to-embellish-honestly-(advice-for-phd-apps)</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/How-to-embellish-honestly-(advice-for-phd-apps)</guid>
-    <description>blog-idea I notice a lot of people posting these long-ass project names in their resumes when they don’t have published research experience but need to convey that they’re familiar with a project There is a style of recruiter-targeted resume embellishment that is effective.</description>
-    <pubDate>Wed, 14 May 2025 23:27:32 GMT</pubDate>
-  </item><item>
-    <title>Culture as practice drafting</title>
-    <link>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</link>
-    <guid>https://notes.mksx.xyz/02-Document-Notes/Drafts/Culture-as-practice-drafting</guid>
-    <description>Writing a section for a paper on research-evaluation, research-culture, research-lm See Culture as Practice Meeting Notes, Culture as Practice textbarf Survey taxonomy Within the class of “global tasks” (can be in English or other languages), we came up with this way to divide up task exemplars: Imp...</description>
-    <pubDate>Tue, 13 May 2025 23:12:09 GMT</pubDate>
-  </item><item>
-    <title>Attributes for text evaluation</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Attributes-for-text-evaluation</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Attributes-for-text-evaluation</guid>
-    <description>KPEval: Towards Fine-Grained Semantic-Based Keyphrase Evaluation @inproceedings{Wu2023KPEvalTF, title={KPEval: Towards Fine-Grained Semantic-Based Keyphrase Evaluation}, author={Di Wu and Da Yin and Kai-Wei Chang}, booktitle={Annual Meeting of the Association for Computational Linguistics}, year={20...</description>
-    <pubDate>Tue, 13 May 2025 19:51:05 GMT</pubDate>
-  </item><item>
-    <title>Untitled</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Untitled</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Untitled</guid>
+    <title>Beautiful Plot Inspo</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Beautiful-Plot-Inspo</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Beautiful-Plot-Inspo</guid>
     <description></description>
-    <pubDate>Tue, 13 May 2025 00:03:58 GMT</pubDate>
+    <pubDate>Thu, 15 May 2025 02:04:17 GMT</pubDate>
   </item><item>
-    <title>In the beginning there was the command line</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/In-the-beginning-there-was-the-command-line</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/In-the-beginning-there-was-the-command-line</guid>
-    <description>bootleg writing-sample Interesting blogpost from Adam Elkus about a sort of interface conservatism that arises in defense of command lines contra the GUI and in defense now of linear timeline feeds vs algorithmic curation.</description>
-    <pubDate>Mon, 12 May 2025 21:14:21 GMT</pubDate>
+    <title>Towards Behavior-Driven AI Development</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Towards-Behavior-Driven-AI-Development</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Towards-Behavior-Driven-AI-Development</guid>
+    <description>2023-03-28 17:15 Tags: blogpost-notes Blogpost link Based on a paper called Zeno: An Interactive Framework for Behavioral Evaluation of Machine Learning Useful for mining for future reference It is a currently active Python package for use in dataset analysis, but it lacks the powerful integrations ...</description>
+    <pubDate>Thu, 15 May 2025 02:04:17 GMT</pubDate>
   </item><item>
-    <title>Mark I Fire Control Computer</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Mark-I-Fire-Control-Computer</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Mark-I-Fire-Control-Computer</guid>
-    <description>Excerpted from Wikipedia bootleg The Mark 1, and later the Mark 1A, Fire Control Computer was a component of the Mark 37 Gun Fire Control System deployed by the United States Navy during World War II and up to 1991 and possibly later.</description>
-    <pubDate>Mon, 12 May 2025 20:04:18 GMT</pubDate>
+    <title>OSHW</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/OSHW</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/OSHW</guid>
+    <description>Talk from OpenHW group guy Licensing stuff Apache into hardware needs new shit Verification problems Closing the gap for putting uni-designed stuff Standard languages, tooling, etc Google random instruction generator “NASA’s technology readiness scale” www.nasa.gov/directorates/heo/scan/engineering/...</description>
+    <pubDate>Thu, 15 May 2025 02:04:16 GMT</pubDate>
   </item><item>
-    <title>To read</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/To-read</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/To-read</guid>
-    <description>On The Beach.</description>
-    <pubDate>Wed, 07 May 2025 03:49:52 GMT</pubDate>
+    <title>Cultural variation in response scales</title>
+    <link>https://notes.mksx.xyz/02-Document-Notes/Cultural-variation-in-response-scales</link>
+    <guid>https://notes.mksx.xyz/02-Document-Notes/Cultural-variation-in-response-scales</guid>
+    <description>paper-notes research-extradisciplinary research-culture Academic results RESPONSE STYLE AND CROSS-CULTURAL COMPARISONS OF RATING SCALES AMONG EAST ASIAN AND NORTH AMERICAN STUDENTS Responses to fifty-seven 7-point Likert-type scales were analyzed.</description>
+    <pubDate>Thu, 15 May 2025 02:04:16 GMT</pubDate>
   </item><item>
-    <title>Research is not a jack in the box</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Research-is-not-a-jack-in-the-box</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Research-is-not-a-jack-in-the-box</guid>
-    <description>blog-idea Talking about the “crank turning” model of research and the problems that this attitude will cause in young researchers.</description>
-    <pubDate>Tue, 06 May 2025 20:18:41 GMT</pubDate>
+    <title>Cool colorcoding in LM paper</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Cool-colorcoding-in-LM-paper</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Cool-colorcoding-in-LM-paper</guid>
+    <description>Cool colorcoding in LM paper 2022-04-22 21:55 Tags: writing-ideas they connect the elements of their diagram to the highlighted colors in the manuscript.</description>
+    <pubDate>Thu, 15 May 2025 02:04:16 GMT</pubDate>
+  </item><item>
+    <title>Over-squashing and bottlenecks</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Over-squashing-and-bottlenecks</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Over-squashing-and-bottlenecks</guid>
+    <description>Over-squashing and bottlenecks 2022-04-29 15:51 Tags: @topping2022UNDERSTANDING Message passing paradigm has “over-squashing” problem where messages from distant nodes have their information distorted Message passing: learnable non-linear functions diffuse info in graph GCN and GAT (popular GNN fram...</description>
+    <pubDate>Thu, 15 May 2025 02:04:16 GMT</pubDate>
+  </item><item>
+    <title>I HATE LONGTERMISTS Vol 5</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/I-HATE-LONGTERMISTS-Vol-5</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/I-HATE-LONGTERMISTS-Vol-5</guid>
+    <description>I HATE LONGTERMISTS Vol 5 2022-04-30 22:48 Tags: Secular anti-humanism (prophetic future metahuman millenarianism) leading to literal “lives in the developed world matter more” ideology retardation WHY ARE PEOPLE LIKE THIS lovrepesut.com/ lovrepesut.com/writing/alignment www.lesswrong.com/posts/c2Rz...</description>
+    <pubDate>Thu, 15 May 2025 02:04:16 GMT</pubDate>
+  </item><item>
+    <title>Do AI systems really have their own language?</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Do-AI-systems-really-have-their-own-language</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Do-AI-systems-really-have-their-own-language</guid>
+    <description>Do AI systems really have their own language? 2022-10-10 18:21 Tags: language-model pretraining prompting summary An article by Aaron J.</description>
+    <pubDate>Thu, 15 May 2025 02:04:16 GMT</pubDate>
+  </item><item>
+    <title>LLMs Still Can&#039;t Plan</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/LLMs-Still-Can't-Plan</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/LLMs-Still-Can't-Plan</guid>
+    <description>LLMs Still Can’t Plan 2022-10-10 19:51 Tags: From the article, LLMs Still Can’t Plan by Rao’s students Karthik Valmeekam, Alberto Olmo, and Sarath Sreedharan Rationale and setup Initially, they note that no guarantees were made about the language generated beyond LLMs apart from their coherence We d...</description>
+    <pubDate>Thu, 15 May 2025 02:04:16 GMT</pubDate>
+  </item><item>
+    <title>ACL23 CoCoCroLa Master Notes</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/ACL23-CoCoCroLa-Master-Notes</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/ACL23-CoCoCroLa-Master-Notes</guid>
+    <description>2022-12-10 10:35 Tags: todos paper-planning Out-standing Needs Communicating model comparison findings Table 1: cov as correctness and consistency (model, language level) conceptual coverage scores and aggregate consistency scores CLIP english concept→CLIP image content coverage scores Mturk concept...</description>
+    <pubDate>Thu, 15 May 2025 02:04:16 GMT</pubDate>
   </item>
     </channel>
   </rss>
