@@ -6,17 +6,23 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>AI News 2025-05-21</title>
-    <link>https://notes.mksx.xyz/03-AI-generated/AI-News-2025-05-21</link>
-    <guid>https://notes.mksx.xyz/03-AI-generated/AI-News-2025-05-21</guid>
-    <description>Daily Reading List - 2025-05-21 Trump administration may sell deep-sea mining leases at startup’s urging Source: TechCrunch Summary The U.S.</description>
-    <pubDate>Thu, 22 May 2025 00:28:18 GMT</pubDate>
+    <title>Verifiers</title>
+    <link>https://notes.mksx.xyz/02-Document-Notes/Verifiers</link>
+    <guid>https://notes.mksx.xyz/02-Document-Notes/Verifiers</guid>
+    <description>research-lm research-evaluation This is a home page to aggregate notes about verifiers for LM evaluation.</description>
+    <pubDate>Thu, 22 May 2025 19:53:04 GMT</pubDate>
   </item><item>
     <title>Ofir Press benchmarking talk</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/Ofir-Press-benchmarking-talk</link>
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Ofir-Press-benchmarking-talk</guid>
-    <description>Youtube link Ofir gave a presentation on his evaluation stuff for SWE-bench. Agree strongly with goals for his evals: hard x verifiable x useful.</description>
-    <pubDate>Wed, 21 May 2025 23:29:01 GMT</pubDate>
+    <description>research-evaluation talk-notes Youtube link Ofir gave a presentation on his evaluation stuff for SWE-bench.</description>
+    <pubDate>Thu, 22 May 2025 19:44:37 GMT</pubDate>
+  </item><item>
+    <title>AI News 2025-05-21</title>
+    <link>https://notes.mksx.xyz/03-AI-generated/AI-News-2025-05-21</link>
+    <guid>https://notes.mksx.xyz/03-AI-generated/AI-News-2025-05-21</guid>
+    <description>Daily Reading List - 2025-05-21 Trump administration may sell deep-sea mining leases at startup’s urging Source: TechCrunch Summary The U.S.</description>
+    <pubDate>Thu, 22 May 2025 02:43:42 GMT</pubDate>
   </item><item>
     <title>The Case for _Thick Evaluations_ of Cultural Representation in AI</title>
     <link>https://notes.mksx.xyz/References/The-Case-for-_Thick-Evaluations_-of-Cultural-Representation-in-AI</link>
@@ -58,12 +64,6 @@
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/Cool-colorcoding-in-LM-paper</link>
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Cool-colorcoding-in-LM-paper</guid>
     <description>Cool colorcoding in LM paper 2022-04-22 21:55 Tags: writing-ideas they connect the elements of their diagram to the highlighted colors in the manuscript.</description>
-    <pubDate>Thu, 15 May 2025 02:04:16 GMT</pubDate>
-  </item><item>
-    <title>Over-squashing and bottlenecks</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Over-squashing-and-bottlenecks</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Over-squashing-and-bottlenecks</guid>
-    <description>Over-squashing and bottlenecks 2022-04-29 15:51 Tags: @topping2022UNDERSTANDING Message passing paradigm has “over-squashing” problem where messages from distant nodes have their information distorted Message passing: learnable non-linear functions diffuse info in graph GCN and GAT (popular GNN fram...</description>
     <pubDate>Thu, 15 May 2025 02:04:16 GMT</pubDate>
   </item>
     </channel>
