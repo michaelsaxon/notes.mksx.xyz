@@ -6,6 +6,18 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>A Good Exam is Hard to Fund</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/A-Good-Exam-is-Hard-to-Fund</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/A-Good-Exam-is-Hard-to-Fund</guid>
+    <description>Blogpost from Charles Foster contextwindows.substack.com/p/a-good-exam-is-hard-to-fund Three journo links at the top that are worth mining: Kyle Wiggers: Maybe we should ignore benchmarks for now, Jan 2025 Benedict Evans: Are better models better? Jan 2025 Jon Keegan: Everyone is judging AI by these...</description>
+    <pubDate>Fri, 23 May 2025 02:47:04 GMT</pubDate>
+  </item><item>
+    <title>Why eval startups fail</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Why-eval-startups-fail</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Why-eval-startups-fail</guid>
+    <description>blogpost-notes ai-industry evaluation From Thomas Liao thomasliao.com/eval-startups I haven’t seen any succeed, outside the safety evals niche Talent attrits because good eval ppl have skills to improve the models clients have to be technical developers who want to build with APIs, but also not tech...</description>
+    <pubDate>Fri, 23 May 2025 02:00:26 GMT</pubDate>
+  </item><item>
     <title>Verifiers</title>
     <link>https://notes.mksx.xyz/02-Document-Notes/Verifiers</link>
     <guid>https://notes.mksx.xyz/02-Document-Notes/Verifiers</guid>
@@ -52,18 +64,6 @@
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/OSHW</link>
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/OSHW</guid>
     <description>Talk from OpenHW group guy Licensing stuff Apache into hardware needs new shit Verification problems Closing the gap for putting uni-designed stuff Standard languages, tooling, etc Google random instruction generator “NASA’s technology readiness scale” www.nasa.gov/directorates/heo/scan/engineering/...</description>
-    <pubDate>Thu, 15 May 2025 02:04:16 GMT</pubDate>
-  </item><item>
-    <title>Cultural variation in response scales</title>
-    <link>https://notes.mksx.xyz/02-Document-Notes/Cultural-variation-in-response-scales</link>
-    <guid>https://notes.mksx.xyz/02-Document-Notes/Cultural-variation-in-response-scales</guid>
-    <description>paper-notes research-extradisciplinary research-culture Academic results RESPONSE STYLE AND CROSS-CULTURAL COMPARISONS OF RATING SCALES AMONG EAST ASIAN AND NORTH AMERICAN STUDENTS Responses to fifty-seven 7-point Likert-type scales were analyzed.</description>
-    <pubDate>Thu, 15 May 2025 02:04:16 GMT</pubDate>
-  </item><item>
-    <title>Cool colorcoding in LM paper</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Cool-colorcoding-in-LM-paper</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Cool-colorcoding-in-LM-paper</guid>
-    <description>Cool colorcoding in LM paper 2022-04-22 21:55 Tags: writing-ideas they connect the elements of their diagram to the highlighted colors in the manuscript.</description>
     <pubDate>Thu, 15 May 2025 02:04:16 GMT</pubDate>
   </item>
     </channel>
