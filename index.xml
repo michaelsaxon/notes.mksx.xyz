@@ -6,6 +6,12 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Verifiers</title>
+    <link>https://notes.mksx.xyz/02-Document-Notes/Verifiers</link>
+    <guid>https://notes.mksx.xyz/02-Document-Notes/Verifiers</guid>
+    <description>research-lm research-evaluation This is a home page to aggregate notes about verifiers for LM evaluation.</description>
+    <pubDate>Fri, 23 May 2025 19:49:47 GMT</pubDate>
+  </item><item>
     <title>Examples of Google Veo fails</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/Examples-of-Google-Veo-fails</link>
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Examples-of-Google-Veo-fails</guid>
@@ -23,12 +29,6 @@
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Why-eval-startups-fail</guid>
     <description>blogpost-notes ai-industry evaluation From Thomas Liao thomasliao.com/eval-startups I haven’t seen any succeed, outside the safety evals niche Talent attrits because good eval ppl have skills to improve the models clients have to be technical developers who want to build with APIs, but also not tech...</description>
     <pubDate>Fri, 23 May 2025 02:00:26 GMT</pubDate>
-  </item><item>
-    <title>Verifiers</title>
-    <link>https://notes.mksx.xyz/02-Document-Notes/Verifiers</link>
-    <guid>https://notes.mksx.xyz/02-Document-Notes/Verifiers</guid>
-    <description>research-lm research-evaluation This is a home page to aggregate notes about verifiers for LM evaluation.</description>
-    <pubDate>Thu, 22 May 2025 19:53:04 GMT</pubDate>
   </item><item>
     <title>Ofir Press benchmarking talk</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/Ofir-Press-benchmarking-talk</link>
