@@ -6,11 +6,17 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Reviewer response for Terminator</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Reviewer-response-for-Terminator</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Reviewer-response-for-Terminator</guid>
+    <description> Rerun naive baseline 2: (“answer this efficiently”) for r1 1.5b on GPQA and MATH 📅 2025-05-28 Rerun ablation with % instead of token timing for r1 1.5b on GPQA and MATH 📅 2025-05-28 .</description>
+    <pubDate>Tue, 27 May 2025 21:45:19 GMT</pubDate>
+  </item><item>
     <title>Research is not a jack in the box</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/Research-is-not-a-jack-in-the-box</link>
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Research-is-not-a-jack-in-the-box</guid>
     <description>blog-idea Talking about the “crank turning” model of research and the problems that this attitude will cause in young researchers.</description>
-    <pubDate>Mon, 26 May 2025 21:02:56 GMT</pubDate>
+    <pubDate>Tue, 27 May 2025 20:51:55 GMT</pubDate>
   </item><item>
     <title>Lost Stars Words</title>
     <link>https://notes.mksx.xyz/09-Language/%E6%97%A5%E6%9C%AC%E8%AA%9E/Lost-Stars-Words</link>
@@ -59,12 +65,6 @@
     <guid>https://notes.mksx.xyz/References/Exploring-Cross-Cultural-Differences-in-English-Hate-Speech-Annotations_-From-Dataset-Construction-to-Analysis</guid>
     <description>Exploring Cross-Cultural Differences in English Hate Speech Annotations: From Dataset Construction to Analysis Nayeon Lee, Chani Jung, Junho Myung, Jiho Jin, Jose Camacho-Collados, Juho Kim, Alice Oh 2024 In Zotero: lee2024exploring Online: url tags: zotero paper-notes links: Referenced in Culture a...</description>
     <pubDate>Sat, 24 May 2025 01:01:55 GMT</pubDate>
-  </item><item>
-    <title>Cultural Conditioning or Placebo_ On the Effectiveness of Socio-Demographic Prompting</title>
-    <link>https://notes.mksx.xyz/References/Cultural-Conditioning-or-Placebo_-On-the-Effectiveness-of-Socio-Demographic-Prompting</link>
-    <guid>https://notes.mksx.xyz/References/Cultural-Conditioning-or-Placebo_-On-the-Effectiveness-of-Socio-Demographic-Prompting</guid>
-    <description>Cultural Conditioning or Placebo? On the Effectiveness of Socio-Demographic Prompting Sagnik Mukherjee, Muhammad Farid Adilazuarda, Sunayana Sitaram, Kalika Bali, Alham Fikri Aji, Monojit Choudhury 2024 In Zotero: mukherjeeCulturalConditioningPlacebo2024 Online: url tags: #paper-notes research-cultu...</description>
-    <pubDate>Sat, 24 May 2025 01:01:39 GMT</pubDate>
   </item>
     </channel>
   </rss>
