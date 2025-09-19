@@ -6,11 +6,17 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Quantifying Variance in Evaluation Benchmarks</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Quantifying-Variance-in-Evaluation-Benchmarks</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Quantifying-Variance-in-Evaluation-Benchmarks</guid>
+    <description>paper-notes By Lovish, paper done with Dieuwke Hupkes at Meta. Paper This paper cautions against using IRT to reduce variance.</description>
+    <pubDate>Fri, 19 Sep 2025 01:52:08 GMT</pubDate>
+  </item><item>
     <title>Fluid Language model benchmarking</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/Fluid-Language-model-benchmarking</link>
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Fluid-Language-model-benchmarking</guid>
     <description>Blog post Paper From Ai2 benchmarking paper-notes evaluation, COLM 2025 Motivation Item response theory: a test question is most informative when its tailored to the capabilities of the student.</description>
-    <pubDate>Fri, 19 Sep 2025 00:55:05 GMT</pubDate>
+    <pubDate>Fri, 19 Sep 2025 01:02:11 GMT</pubDate>
   </item><item>
     <title>2025-09-17 Reading</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/2025-09-17-Reading</link>
@@ -59,12 +65,6 @@
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Doctoral-degree-filing-checklist</guid>
     <description> Verify no incompletes in GOLD ✅ 2025-06-09 Verify committee on file ✅ 2025-06-09 Copyright permissions ✅ 2025-06-09 ProQuest account ✅ 2025-06-09 Electronic submission of dissertation on proquest ✅ 2025-06-10 Signed forms sent to gradacademics@graddiv.ucsb.</description>
     <pubDate>Mon, 16 Jun 2025 23:35:41 GMT</pubDate>
-  </item><item>
-    <title>Yixin Liu visit</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Yixin-Liu-visit</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Yixin-Liu-visit</guid>
-    <description>This is great shit, very related to my interests Talks about this: arxiv.org/abs/2501.00560 Paper on evaluating automated replacements for Chatbot Arena Problem: correlation breaks down on similar models Question: do you think chatbot arena correlation is a meaningful measure at close range, or is t...</description>
-    <pubDate>Fri, 06 Jun 2025 22:19:39 GMT</pubDate>
   </item>
     </channel>
   </rss>
