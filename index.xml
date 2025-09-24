@@ -6,6 +6,18 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Spurious rewards</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Spurious-rewards</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Spurious-rewards</guid>
+    <description>paper-notes links Code reasoning caused by RLVR (one sample RL paper) Code reasoning also caused just by random rewards “Compound” reward: we still give spurious reward but don’t reward generating python Code reasoning behavior removed Performance drops! When we do induce code reasoning: Performance...</description>
+    <pubDate>Tue, 23 Sep 2025 18:18:30 GMT</pubDate>
+  </item><item>
+    <title>Fluid Language model benchmarking</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Fluid-Language-model-benchmarking</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Fluid-Language-model-benchmarking</guid>
+    <description>Blog post Paper From Ai2 benchmarking paper-notes evaluation, COLM 2025 Motivation Item response theory: a test question is most informative when its tailored to the capabilities of the student.</description>
+    <pubDate>Tue, 23 Sep 2025 18:02:39 GMT</pubDate>
+  </item><item>
     <title>Talk abstract</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/Talk-abstract</link>
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Talk-abstract</guid>
@@ -17,12 +29,6 @@
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Quantifying-Variance-in-Evaluation-Benchmarks</guid>
     <description>paper-notes By Lovish, paper done with Dieuwke Hupkes at Meta. Paper This paper cautions against using IRT to reduce variance.</description>
     <pubDate>Fri, 19 Sep 2025 04:55:56 GMT</pubDate>
-  </item><item>
-    <title>Fluid Language model benchmarking</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Fluid-Language-model-benchmarking</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Fluid-Language-model-benchmarking</guid>
-    <description>Blog post Paper From Ai2 benchmarking paper-notes evaluation, COLM 2025 Motivation Item response theory: a test question is most informative when its tailored to the capabilities of the student.</description>
-    <pubDate>Fri, 19 Sep 2025 01:02:11 GMT</pubDate>
   </item><item>
     <title>2025-09-17 Reading</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/2025-09-17-Reading</link>
@@ -59,12 +65,6 @@
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Blogpost-idea-suggestibility-machines</guid>
     <description>blog-idea Claude opus threatened to blackmail the engineer, given the context that it had blackmailable information on the engineer, and that it would be shut down Does the model really have an urge for self-preservation or is this just the most obvious way a story would follow? Does it matter?.</description>
     <pubDate>Tue, 24 Jun 2025 04:23:40 GMT</pubDate>
-  </item><item>
-    <title>abstracts for talks</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/abstracts-for-talks</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/abstracts-for-talks</guid>
-    <description>defense A fundamental open question in AI research is: “how can we confidently know what a model can reliably do?” Currently, we often discover model limitations through post-deployment failures rather than proactive assessment.</description>
-    <pubDate>Tue, 17 Jun 2025 22:08:34 GMT</pubDate>
   </item>
     </channel>
   </rss>
