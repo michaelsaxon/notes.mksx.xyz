@@ -6,6 +6,12 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Wtf is a persona?!</title>
+    <link>https://notes.mksx.xyz/02-Document-Notes/Wtf-is-a-persona!</link>
+    <guid>https://notes.mksx.xyz/02-Document-Notes/Wtf-is-a-persona!</guid>
+    <description>Sometimes “persona” in LMs refers to an output persona, ie the thing that describes the human-like behavior the LM is supposed to simulate Other times it refers to input personas, ie the data that models the kind of users the LM is interacting with (in lieu of fully real interactions with the model ...</description>
+    <pubDate>Mon, 29 Sep 2025 21:48:22 GMT</pubDate>
+  </item><item>
     <title>Spurious rewards</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/Spurious-rewards</link>
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Spurious-rewards</guid>
@@ -59,12 +65,6 @@
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/689c8957bc6290577ac2c1f7</guid>
     <description></description>
     <pubDate>Sun, 14 Sep 2025 20:07:45 GMT</pubDate>
-  </item><item>
-    <title>Blogpost idea suggestibility machines</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Blogpost-idea-suggestibility-machines</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Blogpost-idea-suggestibility-machines</guid>
-    <description>blog-idea Claude opus threatened to blackmail the engineer, given the context that it had blackmailable information on the engineer, and that it would be shut down Does the model really have an urge for self-preservation or is this just the most obvious way a story would follow? Does it matter?.</description>
-    <pubDate>Tue, 24 Jun 2025 04:23:40 GMT</pubDate>
   </item>
     </channel>
   </rss>
