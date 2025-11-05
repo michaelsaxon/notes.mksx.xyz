@@ -6,12 +6,6 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Google onboarding notes</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Google-onboarding-notes</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Google-onboarding-notes</guid>
-    <description>This is the max.</description>
-    <pubDate>Wed, 05 Nov 2025 06:47:49 GMT</pubDate>
-  </item><item>
     <title>Who Cares how LMs answer surveys?</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/Who-Cares-how-LMs-answer-surveys</link>
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Who-Cares-how-LMs-answer-surveys</guid>
@@ -36,12 +30,6 @@
     <description>on “agidefinition.ai” paper-notes ai-industry definitions What is it NOTE Definition: AGI is an AI that can match or exceet the cognitive versatility and proficiency of a well-educated adult Cattell-Horn-Carroll theory used to ground methods Ten core domains (reasoning, memory, perception) “Jagged c...</description>
     <pubDate>Fri, 17 Oct 2025 22:17:41 GMT</pubDate>
   </item><item>
-    <title>Siegel Onboarding meeting</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Siegel-Onboarding-meeting</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Siegel-Onboarding-meeting</guid>
-    <description>Symone Campbell Qualitative work in adjuncting at Howard in AI ethics, computer science Black culture within tech products for young learners What are the ethics for that? Policy issues Governance Inquiry areas are education, workforce, and (something else) Embedded in technology Monthly research se...</description>
-    <pubDate>Fri, 17 Oct 2025 21:32:33 GMT</pubDate>
-  </item><item>
     <title>Dispatch from COLM</title>
     <link>https://notes.mksx.xyz/02-Document-Notes/Dispatch-from-COLM</link>
     <guid>https://notes.mksx.xyz/02-Document-Notes/Dispatch-from-COLM</guid>
@@ -65,6 +53,18 @@
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Workslop</guid>
     <description>Lots of articles coming out now about workslop Read Business Insider on 25-10-01 Wasting senior dev time debugging Ruined Upwork and MTurk Slop workshop proposals, emails, etc .</description>
     <pubDate>Wed, 01 Oct 2025 22:53:33 GMT</pubDate>
+  </item><item>
+    <title>Wtf is a persona?!</title>
+    <link>https://notes.mksx.xyz/02-Document-Notes/Wtf-is-a-persona!</link>
+    <guid>https://notes.mksx.xyz/02-Document-Notes/Wtf-is-a-persona!</guid>
+    <description>Sometimes “persona” in LMs refers to an output persona, ie the thing that describes the human-like behavior the LM is supposed to simulate Other times it refers to input personas, ie the data that models the kind of users the LM is interacting with (in lieu of fully real interactions with the model ...</description>
+    <pubDate>Mon, 29 Sep 2025 21:48:22 GMT</pubDate>
+  </item><item>
+    <title>Spurious rewards</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Spurious-rewards</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Spurious-rewards</guid>
+    <description>paper-notes links Code reasoning caused by RLVR (one sample RL paper) Code reasoning also caused just by random rewards “Compound” reward: we still give spurious reward but don’t reward generating python Code reasoning behavior removed Performance drops! When we do induce code reasoning: Performance...</description>
+    <pubDate>Tue, 23 Sep 2025 18:18:30 GMT</pubDate>
   </item>
     </channel>
   </rss>
