@@ -6,6 +6,12 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Conferencemaxxing outline</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Conferencemaxxing-outline</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Conferencemaxxing-outline</guid>
+    <description>Revised Structure I.</description>
+    <pubDate>Wed, 19 Nov 2025 09:46:57 GMT</pubDate>
+  </item><item>
     <title>Who Cares how LMs answer surveys?</title>
     <link>https://notes.mksx.xyz/01-Fleeting-Notes/Who-Cares-how-LMs-answer-surveys</link>
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Who-Cares-how-LMs-answer-surveys</guid>
@@ -59,12 +65,6 @@
     <guid>https://notes.mksx.xyz/02-Document-Notes/Wtf-is-a-persona!</guid>
     <description>Sometimes “persona” in LMs refers to an output persona, ie the thing that describes the human-like behavior the LM is supposed to simulate Other times it refers to input personas, ie the data that models the kind of users the LM is interacting with (in lieu of fully real interactions with the model ...</description>
     <pubDate>Mon, 29 Sep 2025 21:48:22 GMT</pubDate>
-  </item><item>
-    <title>Spurious rewards</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Spurious-rewards</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Spurious-rewards</guid>
-    <description>paper-notes links Code reasoning caused by RLVR (one sample RL paper) Code reasoning also caused just by random rewards “Compound” reward: we still give spurious reward but don’t reward generating python Code reasoning behavior removed Performance drops! When we do induce code reasoning: Performance...</description>
-    <pubDate>Tue, 23 Sep 2025 18:18:30 GMT</pubDate>
   </item>
     </channel>
   </rss>
