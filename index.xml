@@ -6,12 +6,6 @@
       <description>Last 10 notes on Michael&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Untitled</title>
-    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Untitled</link>
-    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Untitled</guid>
-    <description></description>
-    <pubDate>Mon, 29 Dec 2025 21:48:22 GMT</pubDate>
-  </item><item>
     <title>How would I fix reviewing?</title>
     <link>https://notes.mksx.xyz/02-Document-Notes/How-would-I-fix-reviewing</link>
     <guid>https://notes.mksx.xyz/02-Document-Notes/How-would-I-fix-reviewing</guid>
@@ -65,6 +59,12 @@
     <guid>https://notes.mksx.xyz/01-Fleeting-Notes/blogpost-ideas</guid>
     <description>See backlinks How making the case for generality matters when we go to tractability.</description>
     <pubDate>Fri, 03 Oct 2025 22:15:27 GMT</pubDate>
+  </item><item>
+    <title>Workslop</title>
+    <link>https://notes.mksx.xyz/01-Fleeting-Notes/Workslop</link>
+    <guid>https://notes.mksx.xyz/01-Fleeting-Notes/Workslop</guid>
+    <description>Lots of articles coming out now about workslop Read Business Insider on 25-10-01 Wasting senior dev time debugging Ruined Upwork and MTurk Slop workshop proposals, emails, etc .</description>
+    <pubDate>Wed, 01 Oct 2025 22:53:33 GMT</pubDate>
   </item>
     </channel>
   </rss>
